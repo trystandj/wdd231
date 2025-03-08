@@ -198,8 +198,8 @@ figcaption {
     justify-content: center;
 }
 .nav-button {
-    background-color: gray;
-    color: white;
+    background-color: #1e5a7e;
+    color: #fff;
     padding: 8px 20px;
     width: 100px;
     border: none;
@@ -208,12 +208,13 @@ figcaption {
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    
+   
 }
 
+
 .nav-button2 {
-    background-color: gray;
-    color: white;
+    background-color: #1e5a7e;
+    color: #fff;
     padding: 8px 20px;
     width: 100px;
     border: none;

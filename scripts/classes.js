@@ -115,7 +115,7 @@ function displayClassses(filteredClasses) {
         
         subjectButton.textContent = course.subject + ' ' + course.number;
         if (course.completed === true) {
-            subjectButton.style.backgroundColor = 'green';
+            subjectButton.style.backgroundColor = '#1a521d';
         }
         else {
             

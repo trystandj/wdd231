@@ -66,8 +66,8 @@
     }
 
     .nav-button {
-        background-color: gray;
-        color: white;
+        background-color: #1e5a7e;
+        color: #fff;
         padding: 8px 20px;
         width: 50px;
         border: none;
@@ -80,8 +80,8 @@
         display: block;
     }
     .nav-button2 {
-        background-color: gray;
-        color: white;
+        background-color: #1e5a7e;
+        color: #fff;
         padding: 8px 20px;
         width: 100%;
         border: none;
