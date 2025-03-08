@@ -27,6 +27,7 @@ header {
     background-color: #1e5a7e;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     padding: 10px;
+    flex-direction: row-reverse;
 }
 
 header img {
