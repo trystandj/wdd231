@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <meta name="description" content="Trystan Jones's WDD 231 Dynamic Web Fundamentals landing page. Access to canvas, linkedin page, helpful web development resources, and links to the final project.">
+    <meta name="author" content="Trystan Jones">
+    <title>WDD 231 - Dynamic Web Fundamentals - Trystan Jones</title>
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/classes.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    <h1>Howdy</h1>
+
+    <header>
+        <img src="images/image_of_self.webp" alt="Trystan Jones">
+        <h1>Trystan Jones</h1>
+    </header>
+    <button type="button" id="menu" aria-label="Open navigation menu"></button>
+    <nav id="navebar">
+        <ul class="navigation">
+            <li><a href="index.html" target="_blank" title="Home">Home</a></li>
+            <li><a href="#" target="_blank" title="Chamber">Chamber</a></li>
+            <li><a href="https://github.com/trystandj" target="_blank" title="Github">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/trystan-jones-1554a92ba" target="_blank" title="LinkedIn">LinkedIn</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="home">
+            <h2>Home</h2>
+        </div>
+        <section class="card">
+            <h2>Course Work</h2>
+            <div class="card1">
+                <ul>
+                    <li>.</li>
+                    <li>.</li>
+                    <li>.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card2">
+            <h2>Middlebury, Vermont</h2>
+            <picture>
+                <source media="(min-width: 650px)" srcset="images/bernd-dittrich-jOmqZPGxqr0-unsplash.webp">
+                <img src="images/bernd-dittrich-jOmqZPGxqr0-unsplash.webp" alt="Brazil Resort and Town" width="500px" height="600px" loading="lazy">
+            </picture>
+            <figcaption>Fall Colors!</figcaption>
+        </section>
+
+        <section class="card3">
+            <div class="heading">
+                <h2>Web and Computer Programming Certificate</h2>
+                <div class="button">
+                    <a href="#" class="nav-button" id="All" >All</a>
+                    <a href="#" class="nav-button" id="CSE" >CSE</a>
+                    <a href="#" class="nav-button" id="WDD" >WDD</a>
+                </div>
+                <div class="totalCredits"></div>
+                <div class="classes"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p><span id="currentyear"></span> @2024 | Trystan Jones | Vermont</p>
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
+
 </html>
