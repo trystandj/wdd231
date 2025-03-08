@@ -111,7 +111,7 @@ function displayClassses(filteredClasses) {
     filteredClasses.forEach((course) => {
       
         let subjectButton = document.createElement('button');
-        subjectButton.setAttribute('class', 'nav-button'); 
+        subjectButton.setAttribute('class', 'nav-button2'); 
         
         subjectButton.textContent = course.subject + ' ' + course.number;
         if (course.completed === true) {
