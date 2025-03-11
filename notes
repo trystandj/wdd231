@@ -19,3 +19,34 @@ That should do it. To reiterate, when you look at documentation from Facebook an
 
 
 https://developers.facebook.com/tools/debug/ to test how it appears on the crawler for facebook
+
+Make sure to use double qoutes in json
+
+{
+    "family_name": "Santos",
+    "move_in_date": "2024-06-24",
+    "number_of_people": 4,
+    "visited_by_bishopric": true,
+    "family_members": [
+      {
+        "name": "Pedro Santos",
+        "gender": "Male",
+        "birthdate": "1990-05-15"
+      },
+      {
+        "name": "Maria Santos",
+        "gender": "Female",
+        "birthdate": "1992-08-20"
+      },
+      {
+        "name": "Andrea Santos",
+        "gender": "Female",
+        "birthdate": "2010-03-05"
+      },
+      {
+        "name": "Luz Santos",
+        "gender": "Male",
+        "birthdate": "2012-11-10"
+      }
+    ]
+  }
