@@ -1,0 +1,21 @@
+Final Markup
+That should do it. To reiterate, when you look at documentation from Facebook and Twitter for sharing Web pages, there are many other tags available that can be used to specify different types of content. But, in general, the following will suffice:
+
+<!--  Essential META Tags -->
+<meta property="og:title" content="European Travel Destinations">
+<meta property="og:type" content="article" />
+<meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">
+<meta property="og:url" content="http://euro-travel-example.com/index.htm">
+<meta name="twitter:card" content="summary_large_image">
+
+<!--  Non-Essential, But Recommended -->
+<meta property="og:description" content="Offering tour packages for individuals or groups.">
+<meta property="og:site_name" content="European Travel, Inc.">
+<meta name="twitter:image:alt" content="Alt text for image">
+
+<!--  Non-Essential, But Required for Analytics -->
+<meta property="fb:app_id" content="your_app_id" />
+<meta name="twitter:site" content="@website-username">
+
+
+https://developers.facebook.com/tools/debug/ to test how it appears on the crawler for facebook
