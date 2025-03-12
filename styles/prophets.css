@@ -7,65 +7,60 @@
 body {
 	font-size: 18px;
 	font-family: Roboto, Helvetica, sans-serif;
-	color: #fff;
+	color: #333;
+	background-color: #f5f5f5;
+	line-height: 1.6;
 }
 
 h1 {
-	border-bottom: 1px solid #000;
+	border-bottom: 2px solid #0077b6;
 	padding: 15px;
-	background-color: rgb(27, 11, 31, 1);
+	background-color: #023e8a;
+	color: #fff;
 }
 
 h2 {
 	padding: 0.5rem;
-}
-
-#emessage {
-	visibility: hidden;
-	margin: 1rem;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 0.5rem;
-	font-size: 0.8rem;
-	background-color: indianred;
+	color: #0077b6;
 }
 
 nav {
 	display: flex;
 	align-items: center;
 	justify-content: left;
-	border-bottom: 1px solid #bbb;
+	border-bottom: 1px solid #ccc;
+	background-color: #fff;
+	padding: 1rem;
 }
 
-
 #cards {
-	margin-left: 1rem;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
 	grid-gap: 1rem;
 }
 
 section {
-	margin: 1rem;
 	padding: 1rem;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	background-color: rgb(27, 11, 31, 1);
-	color: #fff;
+	background-color: #fff;
+	color: #333;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-items: center;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .highlight {
-	color: navy;
+	color: #0077b6;
+	font-weight: bold;
 }
 
 section img {
 	width: 240px;
 	height: auto;
-	border: 1px solid #fff;
-	box-shadow: 0 0 20px #fff;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 	margin-top: 1rem;
 }
 
@@ -75,38 +70,49 @@ textarea,
 button {
 	padding: 0.5rem;
 	margin: 0.5rem;
-	border: 1px solid rgba(0,0,0,.1);
+	border: 1px solid #0077b6;
+	border-radius: 4px;
 }
 
 .active {
 	color: #fff;
-	background-color: #000;
+	background-color: #0077b6;
+	border-radius: 4px;
+	padding: 0.5rem;
 }
 
 button {
 	width: 150px;
+	background-color: #0077b6;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	
 }
 
 button:hover {
-	background-color: yellow;
-	color: #000;
-	border: 1px solid rgba(0,0,0,.1);
+	background-color: #005f99;
 }
 
 .stats {
 	margin: 0.5rem;
-	border: 1px solid #fff;
 	padding: 1rem;
-	background-color: #000;
+	background-color: transparent;
+	color: #333;
 }
 
 .stats p {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 0.5rem;
+	display: flex;
+	justify-content: space-between;
 }
 
 .label {
-	text-align: right;
-	color: yellow;
+	color: #0077b6;
+	font-weight: bold;
+}
+
+@media (max-width: 600px) {
+	nav {
+		flex-direction: column;
+	}
 }
