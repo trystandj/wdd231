@@ -2,6 +2,8 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/layout.css">
+        <link rel="stylesheet" href="styles/mobile-layout.css">
         <link rel="icon" href="favicon.ico">
         <meta property="og:title" content="Discover Middlebury, Vermont - Chamber of Commerce Directory">
         <meta property="og:type" content="website" />
@@ -12,11 +14,27 @@
         <meta name="description" content="Business Directory page for the Middlebury Chamber of Commerce. Showcasing various local businesses and members of the Chamber."> 
         <meta name="author" content="Trystan Jones">
         <title>Middlebury Chamber of Commerce - Business Directory</title>
+        <script src="scripts/nav.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     </head>
 <body>
-
+    <header>
+        <div class="logo">
+            <img src="images/bank-building.svg" alt="Middlebury, Vermont" width="250" height="250">
+            <span>Middlebury<small>Business Directory</small></span>
+        </div>
+        <button type="button" id="menu" aria-label="Open navigation menu"></button>
+        <nav id="navebar">
+            <ul class="navigation">
+                <li><a href="index.html" id="home" title="Home">Home</a></li>
+                <li><a href="directory.html" id="directory" title="Directory">Directory</a></li>
+                <li><a href="join.html" id="join" title="Join">Join</a></li>
+                <li><a href="discover.html" id="discover" title="Discover">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
 </body>
 </html>

@@ -1,0 +1,46 @@
+/* @media (max-width: 600px) {
+	nav {
+		flex-direction: column;
+	}
+	
+
+	#menu {
+		font-size: 1.5rem;
+		border: 0;
+		background: none;
+		color: var(--third-color);
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+
+	}
+
+	#menu::before {
+		content: "☰";
+	}
+
+	#menu.open::before {
+		content: "❌";
+		
+	}
+
+
+	.open a {
+		display: block;
+	}
+	
+
+    .navigation {
+        display: none;
+        flex-direction: column;
+    }
+
+
+    #navebar.open .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        width: 100%;
+    }
+} */

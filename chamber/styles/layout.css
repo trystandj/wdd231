@@ -1,0 +1,98 @@
+:root {
+    --primary-color: #EDEAE5;
+    --secondary-color: #00545c;
+    --third-color: #FCE181;
+    --background-color: #FFFFFF;
+    --font-family: 'roboto', 'opensans', 'sans-serif', 'Montserrat';
+    --font-main: 'montserrat';
+    --font-body: 'roboto';
+    --text-color: #FFFFFF;
+    --font-size: 1rem;
+    --font-size-large: 1.5rem;
+    --font-size-small: 0.875rem;
+    --border-radius: 5px;
+    --box-shadow: 0 5px 30px black;
+}
+
+* {
+    margin: 0;
+}
+
+
+header {
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+h1 {
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    color: var(--text-color);
+    font-weight: 700;
+    height: 50px;
+}
+
+h2 {
+    
+}
+
+h3 {
+    position: absolute;
+    bottom: 0; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 40px;  
+    height: 40px;
+}
+
+.logo span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logo small {
+    font-size: 12px;
+    display: block;
+}
+    
+.navigation {
+    font-size: var(--font-size-large);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+    flex-direction: row;
+    background-color: var(--secondary-color);
+}
+
+.navigation a {
+    
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color);
+}
+.navigation a:hover {
+    background-color: var(--secondary-color);
+    color: var(--third-color);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
+#menu {
+    display: none; 
+}
+
+
