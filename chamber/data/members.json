@@ -5,7 +5,7 @@
       "address": "1293 Route 7 South, Middlebury, VT 05753",
       "phone-numbers": "802-388-9871",
       "url": "https://www.breadloaf.com/",
-      "icon": "images/breadloaf_logo.webp",
+      "icon": "images/th.webp",
       "membership": 3
     },
     {
@@ -13,15 +13,15 @@
       "address": "137 Maple Street, Middlebury, VT 05753",
       "phone-numbers": "802-388-3300",
       "url": "https://americanflatbread.com/restaurants/middlebury-vt/",
-      "icon": "images/americanflatbread_logo.webp",
+      "icon": "images/OIP.webp",
       "membership": 2
     },
     {
-      "name": "Otter Creek Used Books",
+      "name": "Otter Creek Bakery",
       "address": "99 Maple Street, Middlebury, VT 05753",
       "phone-numbers": "802-388-3241",
       "url": "https://www.thehistoricmarbleworks.com/business-directory.html",
-      "icon": "images/ottercreekbooks_logo.webp",
+      "icon": "images/download.webp",
       "membership": 1
     },
     {
@@ -29,7 +29,7 @@
       "address": "131 S Main St, Middlebury, VT 05753",
       "phone-numbers": "802-443-5000",
       "url": "https://www.middlebury.edu/",
-      "icon": "images/middlebury_logo.webp",
+      "icon": "images/midd).webp",
       "membership": 3
     },
     {
@@ -37,7 +37,7 @@
       "address": "1 Bakery Lane, Middlebury, VT 05753",
       "phone-numbers": "802-388-4856",
       "url": "https://www.tasteofindiavt.com/",
-      "icon": "images/tasteofindia_logo.webp",
+      "icon": "images/india.webp",
       "membership": 2
     },
     {
@@ -45,7 +45,7 @@
       "address": "161 Main Street, Vergennes, VT 05491",
       "phone-numbers": "802-877-9962",
       "url": "https://www.parksqueeze.com/",
-      "icon": "images/parksqueeze_logo.webp",
+      "icon": "images/ps-parksqueezeo.webp",
       "membership": 1
     },
     {
@@ -53,7 +53,7 @@
       "address": "6886 VT-125, Hancock, VT 05748",
       "phone-numbers": "802-443-7669",
       "url": "https://www.middleburysnowbowl.com/",
-      "icon": "images/snowbowl_logo.webp",
+      "icon": "images/snowbowl(1).webp",
       "membership": 3
     }
   ]
