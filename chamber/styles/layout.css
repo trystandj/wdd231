@@ -239,10 +239,22 @@ footer {
     font-family: var(--font-body);
     color: var(--text-color);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    margin: 0.75rem 0;
 }
 
 footer nav {
     position: relative;
     
 }
+
+.sociallinks a {
+    display: inline-block; 
+  }
+  
+  .sociallinks a::after {
+    content: ""; 
+  }
