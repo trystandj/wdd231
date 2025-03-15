@@ -162,6 +162,9 @@ section {
 .grid img {
 	border: 1px solid #fff;
 	box-shadow: 0 0 10px #333;
+    object-fit: cover;
+    width: 100%;
+    height: 90%;   
 }
 
 .grid section > * {
@@ -190,6 +193,7 @@ section {
 
 .list section img {
 	display: none;
+    
 }
 
 .list section h3 {
