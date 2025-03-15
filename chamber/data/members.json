@@ -1,0 +1,60 @@
+{
+"companies": [
+    {
+      "name": "Middlebury College",
+      "address": "131 S Main St, Middlebury, VT 05753",
+      "phone-numbers": "802-443-5000",
+      "url": "https://www.middlebury.edu/",
+      "icon": "images/USFLAG.webp",
+      "membership": 1
+    },    
+    {
+        "name": "Middlebury College",
+        "address": "131 S Main St, Middlebury, VT 05753",
+        "phone-numbers": "802-443-5000",
+        "url": "https://www.middlebury.edu/",
+        "icon": "images/USFLAG.webp",
+        "membership": 1
+    },
+    {
+      "name": "Middlebury College",
+      "address": "131 S Main St, Middlebury, VT 05753",
+      "phone-numbers": "802-443-5000",
+      "url": "https://www.middlebury.edu/",
+      "icon": "images/USFLAG.webp",
+      "membership": 1
+    },
+    {
+      "name": "Middlebury College",
+      "address": "131 S Main St, Middlebury, VT 05753",
+      "phone-numbers": "802-443-5000",
+      "url": "https://www.middlebury.edu/",
+      "icon": "images/USFLAG.webp",
+      "membership": 1
+    },
+    {
+      "name": "Middlebury College",
+      "address": "131 S Main St, Middlebury, VT 05753",
+      "phone-numbers": "802-443-5000",
+      "url": "https://www.middlebury.edu/",
+      "icon": "images/USFLAG.webp",
+      "membership": 1
+    },
+    {
+      "name": "Middlebury College",
+      "address": "131 S Main St, Middlebury, VT 05753",
+      "phone-numbers": "802-443-5000",
+      "url": "https://www.middlebury.edu/",
+      "icon": "images/USFLAG.webp",
+      "membership": 1
+    },
+    {
+      "name": "Middlebury College",
+      "address": "131 S Main St, Middlebury, VT 05753",
+      "phone-numbers": "802-443-5000",
+      "url": "https://www.middlebury.edu/",
+      "icon": "images/USFLAG.webp",
+      "membership": 1
+    }
+  ]
+}

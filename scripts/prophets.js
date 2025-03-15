@@ -50,7 +50,7 @@ const getProphets = (filter = "all") => {
     displayProphets(prophets);
 };
 
- getProphetData();
+ getCompanyData();
 
  const displayProphets = (prophets) => {
     document.querySelector('#cards').innerHTML = '';

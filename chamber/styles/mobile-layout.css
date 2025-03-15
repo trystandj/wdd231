@@ -1,5 +1,16 @@
-@media (max-width: 600px) {
-	nav {
+@media (max-width: 670px) {
+
+    header {
+        background-color: var(--secondary-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+        
+    }
+
+    nav {
 		flex-direction: column;
 		display: block;
 	}
@@ -10,18 +21,18 @@
 		border: 0;
 		background: none;
 		color: var(--third-color);
-		position: absolute;
-		top: 1rem;
-		right: 1rem;
+		
+		/* top: 1.5rem;
+		right: 1rem; */
 		display: block;
 	}
 
 	#menu::before {
-		content: "☰";
+		content: "❌";
 	}
 
 	#menu.open::before {
-		content: "❌";
+		content: "☰";
 		
 	}
 
@@ -29,19 +40,14 @@
 
 	.open a {
 		display: block;
+        display: none;
 	}
 	
 
-    .navigation {
-        display: none;
-		width: 100%;
-        flex-direction: column;
-    }
 
 
-    #navebar.open .navigation {
-        display: flex;
-    }
+
+
 
     .navigation li {
         width: 100%;
@@ -51,7 +57,8 @@
 
     .navigation {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-around;
         list-style: none;
         background-color: var(--secondary-color);
@@ -61,7 +68,7 @@
     }
 
     .navigation a {
-        display: none;
+        
         padding: 1rem;
         text-align: center;
         text-decoration: none;
@@ -72,6 +79,17 @@
         color: var(--third-color);
         font-weight: 700;
         text-decoration: underline;
+    }
+
+    .nav-sunrise img {
+        display: block;
+        position: relative;
+
+    }
+
+    .nav-sunrise {
+        flex-direction: column;
+        align-items: center;
     }
 
 }

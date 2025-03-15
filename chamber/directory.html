@@ -16,6 +16,7 @@
         <title>Middlebury Chamber of Commerce - Business Directory</title>
         <script src="scripts/nav.js" defer></script>
         <script src="scripts/getdates.js" defer></script>
+        <script src="scripts/company.js" defer></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -27,14 +28,29 @@
             <img src="images/bank-building.svg" alt="Middlebury, Vermont" width="250" height="250">
         </div>
         <button type="button" id="menu" aria-label="Open navigation menu"></button>
-        <nav id="navebar">
-            <ul class="navigation">
-                <li><a href="index.html" id="home" title="Home">Home</a></li>
-                <li><a href="directory.html" id="directory" title="Directory">Directory</a></li>
-                <li><a href="join.html" id="join" title="Join">Join</a></li>
-                <li><a href="discover.html" id="discover" title="Discover">Discover</a></li>
-            </ul>
-        </nav>
+        
+        <div class="nav-sunrise">
+            <img src="images/weather-icon.svg" alt="Sun-Rise" width="40" height="40">
+            <nav id="navebar">
+                <ul class="navigation">
+                    <li><a href="index.html" id="home" title="Home">Home</a></li>
+                    <li><a href="directory.html" id="directory" title="Directory">Directory</a></li>
+                    <li><a href="join.html" id="join" title="Join">Join</a></li>
+                    <li><a href="discover.html" id="discover" title="Discover">Discover</a></li>
+                </ul>
+            </nav>
+            
+        </div>
     </header>
+    <main>
+        <div class="menu-grid">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
+        </div>
+
+        <div id="cards"></div>
+
+        </article>
+    </main>
 </body>
 </html>
