@@ -1,4 +1,4 @@
-const url = 'data/members.json';
+const url = 'https://trystandj.github.io/wdd231/chamber/data/members.json';
 const cards = document.querySelector('#cards');
 const list = document.querySelector(".list");
 
@@ -6,15 +6,13 @@ const list = document.querySelector(".list");
 let allCompanies = [];
 
 async function getCompanyData() {
-    try {
+
         const response = await fetch(url);
         const data = await response.json();
-        allCompanies = data.members;
+        allCompanies = data.companies;
         displayCompanies(allCompanies); 
-    }
-    catch (error) {
-        console.error("Could not fetch company data:", error);
-    }
+
+
 }
 
 getCompanyData();

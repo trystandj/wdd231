@@ -119,14 +119,21 @@ nav a {
     flex-direction: row-reverse;
 }
 
-
+main {
+	margin: 0 auto;
+	padding: 0.5rem;
+	max-width: 900px;
+	background-color: #fff;
+	
+}
 
 .menu-grid {
 	margin: 1rem auto;
-	border: 1px solid rgba(0, 0, 0, 0.1);
+
 	padding: 0.5rem;
-	background-color: #bed;
+
 	text-align: center;
+    
 }
 
 .menu-grid button {
@@ -143,8 +150,9 @@ section {
 .grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-gap: 5px;
+	grid-gap: 50px;
 	align-items: center;
+    max-width:1000px
 }
 
 .grid section {
@@ -213,4 +221,21 @@ img {
 	height: 75px;
 	max-width: 100%;  
 
+}
+
+
+
+footer {
+    background:var(--secondary-color);
+    padding: 2rem;
+    text-align: center;
+    font-family: var(--font-body);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+}
+
+footer nav {
+    position: relative;
+    
 }

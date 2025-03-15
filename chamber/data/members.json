@@ -1,35 +1,27 @@
 {
-"companies": [
+  "companies": [
     {
-      "name": "Middlebury College",
-      "address": "131 S Main St, Middlebury, VT 05753",
-      "phone-numbers": "802-443-5000",
-      "url": "https://www.middlebury.edu/",
-      "icon": "images/USFLAG.webp",
-      "membership": 1
-    },    
-    {
-        "name": "Middlebury College",
-        "address": "131 S Main St, Middlebury, VT 05753",
-        "phone-numbers": "802-443-5000",
-        "url": "https://www.middlebury.edu/",
-        "icon": "images/USFLAG.webp",
-        "membership": 1
+      "name": "Bread Loaf Corporation",
+      "address": "1293 Route 7 South, Middlebury, VT 05753",
+      "phone-numbers": "802-388-9871",
+      "url": "https://www.breadloaf.com/",
+      "icon": "images/breadloaf_logo.webp",
+      "membership": 3
     },
     {
-      "name": "Middlebury College",
-      "address": "131 S Main St, Middlebury, VT 05753",
-      "phone-numbers": "802-443-5000",
-      "url": "https://www.middlebury.edu/",
-      "icon": "images/USFLAG.webp",
-      "membership": 1
+      "name": "American Flatbread",
+      "address": "137 Maple Street, Middlebury, VT 05753",
+      "phone-numbers": "802-388-3300",
+      "url": "https://americanflatbread.com/restaurants/middlebury-vt/",
+      "icon": "images/americanflatbread_logo.webp",
+      "membership": 2
     },
     {
-      "name": "Middlebury College",
-      "address": "131 S Main St, Middlebury, VT 05753",
-      "phone-numbers": "802-443-5000",
-      "url": "https://www.middlebury.edu/",
-      "icon": "images/USFLAG.webp",
+      "name": "Otter Creek Used Books",
+      "address": "99 Maple Street, Middlebury, VT 05753",
+      "phone-numbers": "802-388-3241",
+      "url": "https://www.thehistoricmarbleworks.com/business-directory.html",
+      "icon": "images/ottercreekbooks_logo.webp",
       "membership": 1
     },
     {
@@ -37,24 +29,32 @@
       "address": "131 S Main St, Middlebury, VT 05753",
       "phone-numbers": "802-443-5000",
       "url": "https://www.middlebury.edu/",
-      "icon": "images/USFLAG.webp",
+      "icon": "images/middlebury_logo.webp",
+      "membership": 3
+    },
+    {
+      "name": "Taste of India",
+      "address": "1 Bakery Lane, Middlebury, VT 05753",
+      "phone-numbers": "802-388-4856",
+      "url": "https://www.tasteofindiavt.com/",
+      "icon": "images/tasteofindia_logo.webp",
+      "membership": 2
+    },
+    {
+      "name": "Park Squeeze",
+      "address": "161 Main Street, Vergennes, VT 05491",
+      "phone-numbers": "802-877-9962",
+      "url": "https://www.parksqueeze.com/",
+      "icon": "images/parksqueeze_logo.webp",
       "membership": 1
     },
     {
-      "name": "Middlebury College",
-      "address": "131 S Main St, Middlebury, VT 05753",
-      "phone-numbers": "802-443-5000",
-      "url": "https://www.middlebury.edu/",
-      "icon": "images/USFLAG.webp",
-      "membership": 1
-    },
-    {
-      "name": "Middlebury College",
-      "address": "131 S Main St, Middlebury, VT 05753",
-      "phone-numbers": "802-443-5000",
-      "url": "https://www.middlebury.edu/",
-      "icon": "images/USFLAG.webp",
-      "membership": 1
+      "name": "Middlebury Snow Bowl",
+      "address": "6886 VT-125, Hancock, VT 05748",
+      "phone-numbers": "802-443-7669",
+      "url": "https://www.middleburysnowbowl.com/",
+      "icon": "images/snowbowl_logo.webp",
+      "membership": 3
     }
   ]
 }
