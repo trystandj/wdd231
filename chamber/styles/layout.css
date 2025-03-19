@@ -34,7 +34,7 @@ h1 {
     align-items: center;
     text-align: center;
     padding: 1rem;
-    color: var(--text-color);
+    
     font-weight: 700;
     height: 50px;
 }
@@ -52,15 +52,17 @@ h3 {
     order: -1;
 }
 
+.logo span {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
 .logo img {
     width: 40px;  
     height: 40px;
 }
 
-.logo span {
-    font-size: 18px;
-    font-weight: bold;
-}
+
 
 .logo small {
     font-size: 12px;
