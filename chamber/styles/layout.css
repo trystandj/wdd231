@@ -23,10 +23,11 @@ header {
     background-color: var(--secondary-color);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    
     flex-wrap: wrap;
     position: relative;
     
+    justify-content: flex-start
 }
 
 h1 {
@@ -52,7 +53,7 @@ h3 {
     align-items: center;
     gap: 10px;
     flex-direction: row-reverse;
-
+    order: -1;
 }
 
 .logo img {
@@ -78,6 +79,7 @@ h3 {
     list-style-type: none;
     flex-direction: row;
     background-color: var(--secondary-color);
+   
 }
 
 .navigation li {
@@ -117,6 +119,7 @@ nav a {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
+    margin-left: auto;
 }
 
 main {
@@ -270,5 +273,7 @@ footer p {
 
   small {
     display: block;
-    font-size: 60%; /* Adjust size if needed */
+    font-size: var(--font-size-small); 
+    
+    
   }
