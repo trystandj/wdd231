@@ -11,8 +11,6 @@ async function getCompanyData() {
         const data = await response.json();
         allCompanies = data.companies;
         displayCompanies(allCompanies); 
-
-
 }
 
 getCompanyData();

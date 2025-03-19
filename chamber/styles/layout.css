@@ -262,3 +262,13 @@ footer p {
   .sociallinks a::after {
     content: ""; 
   }
+
+
+
+
+  /* Index.html */
+
+  small {
+    display: block;
+    font-size: 60%; /* Adjust size if needed */
+  }

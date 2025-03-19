@@ -245,3 +245,18 @@ footer {
 footer p {
     margin: 5px 0;
 }
+
+/* The comment below is used to
+   disable specific styling */
+/*
+span {
+  color: blue;
+  font-size: 1.5em;
+}
+*/
+
+.parent ~ p {
+    color: red;
+    display: grid;
+    display: flex;
+}
