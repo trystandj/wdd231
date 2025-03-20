@@ -124,114 +124,53 @@ nav a {
 main {
 	margin: 0 auto;
 	padding: 0.5rem;
-	max-width: 900px;
+	
 	background-color: #fff;
 
 }
 
-.menu-grid {
-	margin: 1rem auto;
 
-	padding: 0.5rem;
-
-	text-align: center;
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    text-align: center;
     
 }
 
-.menu-grid button {
-	padding: 1rem;
-	font-weight: 700;
+.hero-content {
+    text-align: center;
 }
 
-section {
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 0.5rem;
-	background-color: #eee;
-    max-width: 700px;
-    max-height: 800px;
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
-.grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-gap: 50px;
-	align-items: center;
-    max-width:1000px
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
 
-.grid section {
-	text-align: center;
-}
-
-.grid img {
-    flex-grow: 1; 
-    object-fit: cover; 
-    width: 100%;
-    height: 60%;
-    max-height: 150px;  
-}
-
-.grid section > * {
-	margin: 0.1rem;
-}
-
-.grid h3 {
-	font-family: "Caveat", cursive;
-}
-
-.list {
-	display: flex;
-	flex-direction: column;
-    align-items: center
-}
-
-.list section {
-	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
-	margin: 0;
-	padding: 0.25rem;
-}
-
-.list section > * {
-	margin: 0 1rem;
-}
-
-.list section img {
-	display: none;
-    
-}
-
-.list section h3 {
-	font-size: 1rem;
-	font-family: Roboto, Helvetica, sans-serif;
-}
-
-.list section:nth-child(even) {
-	background-color: #bed;
-}
-
-section h3 {
-	font-size: 1.5rem;
-}
-
-section p {
-	font-weight: 600;
-	font-size: smaller;
-}
-
-section a {
-	font-family: "Roboto", Arial, sans-serif;
-	font-size: 0.85rem;
-	color: navy;
-	letter-spacing: 1.1pt;
-}
-
-.list img {
-	height: 75px;
-	max-width: 100%;  
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem; 
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
 
 }
 
+.cta-button:hover {
+    background-color: #004d99;
+}
+
+picture img {
+    width: 100%; 
+    height: auto; 
+}
 
 
 footer {
@@ -268,7 +207,7 @@ footer p {
 
 
 
-  /* Index.html */
+ 
 
   small {
     display: block;
