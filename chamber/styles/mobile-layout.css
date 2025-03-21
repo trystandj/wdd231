@@ -96,6 +96,24 @@
         flex-direction: column;
     }
 
+    .hero-content {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+      }
 
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin: 1rem;
+        height: 500px;
+    }
 
+    .weather, .forcast {
+        grid-column: 1/3;
+    }
 }

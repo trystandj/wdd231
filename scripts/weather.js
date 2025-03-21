@@ -12,7 +12,7 @@ const myUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=
 function displayResults(data) {
     currentTemp.textContent = `${data.main.temp}°C`; // Display temperature
 
-    const iconCode = data.weather[0].icon; // Get the weather icon code
+    const iconCode = data.weather[0].icon; 
     const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
     weatherIcon.setAttribute('src', iconUrl);
     weatherIcon.setAttribute('alt', data.weather[0].description);
@@ -25,8 +25,8 @@ async function apiFetch() {
       const response = await fetch(myUrl);
       if (response.ok) {
         const data = await response.json();
-        console.log(data); // testing only
-        displayResults(data);// displayResults(data); // uncomment when ready
+        console.log(data); 
+        displayResults(data);
       } else {
           throw Error(await response.text());
       }
