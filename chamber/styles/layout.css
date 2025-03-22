@@ -1,6 +1,6 @@
 :root {
     --primary-color: #EDEAE5;
-    --secondary-color: #00545c;
+    --secondary-color: #143B5F;
     --third-color: #FCE181;
     --background-color: #FFFFFF;
     --font-family: 'roboto', 'opensans', 'sans-serif', 'Montserrat';
@@ -265,7 +265,11 @@ footer p {
     content: ""; 
   }
 
-
+  footer img {
+    width: 50px;
+  
+    margin: 1rem;
+}
 
 
   /* Index.html */
