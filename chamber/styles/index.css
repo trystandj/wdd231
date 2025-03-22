@@ -287,6 +287,12 @@ footer {
     
 }
 
+footer img {
+    width: 50px;
+    padding: auto;
+    margin: 1rem;
+}
+
 footer nav {
     position: relative;
     
