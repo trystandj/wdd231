@@ -1,6 +1,6 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
+const captionDesc = document.querySelector('#weather-p');
 const humidityElement = document.querySelector('#humidity');
 const highTempElement = document.querySelector('#high-temp');
 const lowTempElement = document.querySelector('#low-temp');
@@ -37,8 +37,14 @@ function displayResults(data) {
     weatherIcon.setAttribute('src', iconUrl);
     weatherIcon.setAttribute('alt', data.weather[0].description);
 
-    
-    captionDesc.textContent = data.weather[0].description;
+
+    captionDesc.textContent = capitalizeFirstLetter(data.weather[0].description);
+
+
+}
+
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
 }
 
 function displayForecast(forecastData) {

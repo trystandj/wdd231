@@ -226,7 +226,7 @@ p {
 }
 
 
-.forcast {
+.forecast {
     display: flex;
     flex-direction: column;
     
@@ -234,6 +234,8 @@ p {
     font-size: xx-large;
 
 }
+
+
 
 .weather {
     display: flex;
@@ -289,7 +291,7 @@ footer {
 
 footer img {
     width: 50px;
-    padding: auto;
+  
     margin: 1rem;
 }
 

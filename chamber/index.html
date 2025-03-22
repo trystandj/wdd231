@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/index.css">
-        <link rel="stylesheet" href="styles/mobile-layout.css">
-        <link rel="icon" href="favicon.ico">
-        <meta property="og:title" content="Discover Middlebury, Vermont - Chamber of Commerce Directory">
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://trystandj.github.io/wdd231/chamber/images/middlebury.webp">
-        <meta property="og:url" content="https://trystandj.github.io/wdd231/chamber/directory.html">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Business Directory page for the Middlebury Chamber of Commerce. Showcasing various local businesses and members of the Chamber."> 
-        <meta name="author" content="Trystan Jones">
-        <title>Middlebury Chamber of Commerce</title>
-        <script src="scripts/nav.js" defer></script>
-        <script src="scripts/getdates.js" defer></script>
-        <script src="scripts/spotlight.js" defer></script>
-        <script src="scripts/weather.js" defer></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    </head>
+<head>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/mobile-layout.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Discover Middlebury, Vermont - Chamber of Commerce Directory">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://trystandj.github.io/wdd231/chamber/images/middlebury.webp">
+    <meta property="og:url" content="https://trystandj.github.io/wdd231/chamber/directory.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Business Directory page for the Middlebury Chamber of Commerce. Showcasing various local businesses and members of the Chamber."> 
+    <meta name="author" content="Trystan Jones">
+    <title>Middlebury Chamber of Commerce</title>
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
 <body>
     <header>
         <div class="logo">
@@ -48,17 +48,16 @@
         <h1>Middlebury Chamber of Commerce</h1>
 
         <section class="hero">
-            
-                <picture>
-                    <source media="(min-width: 650px)" srcset="images/middlebury.webp">
-                    <img src="images/middlebury.webp" alt="Middlebury VT" width="1200" height="800" loading="lazy">
-                </picture>
-                <div class="overlay"></div>
-                <div class="hero-content">
-                <a href="#" class="cta-button">Claim Your Membershp</a>
-                </div>
+            <picture>
+                <source media="(min-width: 650px)" srcset="images/middlebury.webp">
+                <img src="images/middlebury.webp" alt="Middlebury VT" width="1200" height="800" loading="lazy">
+            </picture>
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <a href="#" class="cta-button">Claim Your Membership</a>
             </div>
         </section>
+
         <section class="grid">
             <div class="events">
                 <h2>Current Events</h2>
@@ -74,20 +73,18 @@
                 <h4>Weekend Yoga & Mindfulness Retreat</h4>
                 <p>9:00am - Lakeview Resort</p>
             </div>
+
             <div class="weather">
                 <h2>Current Weather</h2>
                 <div class="weather2">
-                    <div >
-                        <img id="weather-icon" src="" alt="">
-                        <figcaption></figcaption>
+                    <div>
+                        <img id="weather-icon" src="/" alt="Weather Icon" width="100" height="100">
+                        
                     </div>
                     <div>
-                        
-                        
+                        <p id="weather-p"></p>
                         <p><span id="current-temp"></span></p>
                         
-                        
-                        <p id="current-temp"></p>
                         <p id="high-temp"></p>
                         <p id="low-temp"></p>
                         <p id="humidity"></p>
@@ -96,18 +93,17 @@
                     </div>
                 </div>
             </div>
-            <div class="forcast">
+
+            <div class="forecast">
                 <h2>Weather Forecast</h2>
                 <p id="today"></p>
                 <p id="tomorrow"></p>
                 <p id="day-after"></p>
             </div>
-        
         </section>
 
         <section class="spotlight">
             <div id="cards"></div>
-
         </section>
     </main>
     
@@ -120,17 +116,17 @@
         </div>
         <nav class="sociallinks">
             <a href="https://www.linkedin.com/" target="_blank">
-                <img src="images/5296501_linkedin_network_linkedin logo_icon.svg" alt="Youtube">
+                <img src="images/5296501_linkedin_network_linkedin_logo_icon.svg" alt="LinkedIn">
             </a>
             <a href="https://www.instagram.com/" target="_blank">
-                <img src="images/1298747_instagram_brand_logo_social media_icon.svg" alt="Instagram">
+                <img src="images/1298747_instagram_brand_logo_social_media_icon.svg" alt="Instagram">
             </a>
             <a href="https://www.youtube.com/" target="_blank">
-                <img src="images/4375133_logo_youtube_icon.svg" alt="Youtube">
+                <img src="images/4375133_logo_youtube_icon.svg" alt="YouTube">
             </a>
         </nav>
         <div>
-            <p>  <span id="currentyear"></span> WDD231 Class Project</p>
+            <p><span id="currentyear"></span> WDD231 Class Project</p>
             <p>Trystan Jones</p>
             <p>@2025 Middlebury Chamber of Commerce</p>
             <p id="lastModified"></p>
@@ -138,5 +134,3 @@
     </footer>
 </body>
 </html>
-
-
