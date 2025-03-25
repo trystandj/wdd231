@@ -101,28 +101,48 @@ allClasses.addEventListener('click', (event) => {
 });
 
 
-
 function displayClassses(filteredClasses) {
-
     document.querySelector('.classes').innerHTML = '';
     const totalCredits = filteredClasses.reduce((accum, course) => accum + course.credits, 0);
     document.querySelector('.totalCredits').innerHTML = `<p>Total Credits: ${totalCredits}</p>`;
 
-    filteredClasses.forEach((course) => {
-      
-        let subjectButton = document.createElement('button');
-        subjectButton.setAttribute('class', 'nav-button2'); 
+    filteredClasses.forEach((course, index) => {
         
-        subjectButton.textContent = course.subject + ' ' + course.number;
-        if (course.completed === true) {
+        let subjectButton = document.createElement('button');
+        subjectButton.setAttribute('class', 'button open-button');
+        subjectButton.textContent = `${course.subject} ${course.number}`;
+
+        if (course.completed) {
             subjectButton.style.backgroundColor = '#1a521d';
         }
-        else {
-            
-        }
 
+    
+        let dialog = document.createElement('dialog');
+        dialog.setAttribute('class', 'modal');
+        dialog.setAttribute('id', `modal-${course.number}`); 
+
+        
+        dialog.innerHTML = `
+            <h2>${course.subject} ${course.number}</h2>
+            <p>${course.title}</p>
+            <p>Credits: ${course.credits}</p>
+            <p>${course.description}</p>
+            <p>Technologies: ${course.technology.join(', ')}</p>
+            <button class="close-button">❌</button>
+        `;
+
+      
         document.querySelector('.classes').appendChild(subjectButton);
+        document.querySelector('.classes').appendChild(dialog);
+
+        
+        subjectButton.addEventListener('click', () => {
+            dialog.showModal();
+        });
+
+        dialog.querySelector('.close-button').addEventListener('click', () => {
+            dialog.close();
+        });
     });
 }
-
 
