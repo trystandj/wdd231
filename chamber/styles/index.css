@@ -39,7 +39,7 @@ h1 {
 
 }
 
-h3 {
+.grid h3 {
     position: absolute;
     bottom: 0; 
 }
@@ -206,7 +206,7 @@ main {
 }
 
 
-h2 {
+.grid h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     border-bottom: 2px solid #3a4a72; 
@@ -364,4 +364,82 @@ footer p {
     color: var(--third-color);
     font-weight: 700;
     text-decoration: underline;
+}
+
+
+
+
+/* Join Page */
+
+
+form.designOne {
+    max-width: 500px;
+    margin: 50px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Lato', sans-serif;
+}
+
+
+form.designOne label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form.designOne input[type="text"],
+form.designOne input[type="email"],
+form.designOne input[type="tel"],
+form.designOne select,
+form.designOne textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+form.designOne input[type="submit"] {
+    width: 95%;
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    font-weight: bold;
+}
+
+form.designOne input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+
+#modal {
+    width: 300px;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#modal::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#modal .close-button {
+    background: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }

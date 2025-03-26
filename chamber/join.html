@@ -16,8 +16,8 @@
     <title>Middlebury Chamber of Commerce</title>
     <script src="scripts/nav.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/classicModals.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -46,6 +46,73 @@
     
     <main>
         <h1>Join The Middlebury Chamber of Commerce</h1>
+
+        <form method="GET" action="thankyou.html" class="designOne">
+            <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name" required></label>
+            <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name" required></label>
+            <label>Title <input type="text" name="title" required autocomplete="title-name" title="Your Title"></label>
+            <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email" required></label>
+            <label>Cell Phone <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
+            <label>Business/Organization's Name <input type="text" name="name"  autocomplete="organization" title="An Organization" placeholder="Company-X" required></label>
+            <label>Business Description: <textarea name="businessDescription" rows="4" cols="10" required></textarea></label>
+    
+            <label>Membership-Level
+              <select name="Membership-Level" required>
+                <option value="">None</option>
+                <option value="Member">Non Profit Membership Level</option>
+                <option value="Bronze">Bronze Membership Level</option>
+                <option value="Silver">Silver Membership Level</option>
+                <option value="Gold">Gold Membership Level</option>
+            </label>
+            <label><input type="hidden" id="timestamp" name="timestamp"></label>
+            <label><input type="submit" value="Claim Your Membership"></label>
+        </form>
+        
+        <section class="Membership">
+            <div>
+                <h2>Membership Levels</h2>
+                <div>
+                    <h3>Non Profit Membership Level</h3>
+                    <button class="open-button" data-modal="modal-nonprofit">Learn More</button>
+                    <dialog id="modal-nonprofit" aria-labelledby="modalTitle-nonprofit">
+                        <h2 id="modalTitle-nonprofit">Non Profit Membership</h2>
+                        <p>This is a simple modal dialog.</p>
+                        <button class="close-button">Close</button>
+                    </dialog>
+                </div>
+                
+                <div>
+                    <h3>Bronze Membership Level</h3>
+                    <button class="open-button" data-modal="modal-bronze">Learn More</button>
+                    <dialog id="modal-bronze" aria-labelledby="modalTitle-bronze">
+                        <h2 id="modalTitle-bronze">Bronze Membership</h2>
+                        <p>This is a simple modal dialog.</p>
+                        <button class="close-button">Close</button>
+                    </dialog>
+                </div>
+                
+                <div>
+                    <h3>Silver Membership Level</h3>
+                    <button class="open-button" data-modal="modal-silver">Learn More</button>
+                    <dialog id="modal-silver" aria-labelledby="modalTitle-silver">
+                        <h2 id="modalTitle-silver">Silver Membership</h2>
+                        <p>This is a simple modal dialog.</p>
+                        <button class="close-button">Close</button>
+                    </dialog>
+                </div>
+                
+                <div>
+                    <h3>Gold Membership Level</h3>
+                    <button class="open-button" data-modal="modal-gold">Learn More</button>
+                    <dialog id="modal-gold" aria-labelledby="modalTitle-gold">
+                        <h2 id="modalTitle-gold">Gold Membership</h2>
+                        <p>This is a simple modal dialog.</p>
+                        <button class="close-button">Close</button>
+                    </dialog>
+                </div>
+                
+            </div>
+        </section>
     </main>
     
     <footer>
@@ -56,16 +123,17 @@
             <p>802-388-7951</p>
         </div>
         <nav class="sociallinks">
-            <a href="https://www.linkedin.com/" target="_blank">
-                <img src="images/5296501_linkedin_network_linkedin_logo_icon.svg" alt="LinkedIn" target="_blank" aria-label="Follow us on LinkedIn">
+            <a href="https://www.linkedin.com/" target="_blank" aria-label="Follow us on LinkedIn">
+                <img src="images/linkin.webp" alt="LinkedIn">
             </a>
-            <a href="https://www.instagram.com/" target="_blank">
-                <img src="images/1298747_instagram_brand_logo_social_media_icon.svg" alt="Instagram" target="_blank" aria-label="Follow us on Instagram">
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Follow us on Instagram">
+                <img src="images/instagram.svg" alt="Instagram">
             </a>
-            <a href="https://www.youtube.com/" target="_blank">
-                <img src="images/4375133_logo_youtube_icon.svg" alt="YouTube" target="_blank" aria-label="Follow us on YouTube">
+            <a href="https://www.youtube.com/" target="_blank" aria-label="Follow us on YouTube">
+                <img src="images/youtube.svg" alt="YouTube">
             </a>
         </nav>
+        
         <div>
             <p><span id="currentyear"></span> WDD231 Class Project</p>
             <p>Trystan Jones</p>
