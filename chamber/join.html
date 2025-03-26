@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/mobile-index.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Discover Middlebury, Vermont - Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://trystandj.github.io/wdd231/chamber/images/middlebury.webp">
+    <meta property="og:url" content="https://trystandj.github.io/wdd231/chamber/directory.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Business Directory page for the Middlebury Chamber of Commerce. Showcasing various local businesses and members of the Chamber."> 
+    <meta name="author" content="Trystan Jones">
+    <title>Middlebury Chamber of Commerce</title>
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>Middlebury<br><small>Chamber of Commerce</small></span>
+            <img src="images/bank-building.svg" alt="Illustration of a Chamber of Commerce building in Middlebury" width="250" height="250">
+        </div>
+        
+        <button type="button" id="menu" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="navebar"></button>
+    
+        <div class="nav-sunrise">
+            <img src="images/weather-icon.svg" alt="Sun-Rise" width="40" height="40" aria-hidden="true">
+            <nav id="navebar">
+                <ul class="navigation">
+                    <li><a href="index.html" id="home" title="Home">Home</a></li>
+                    <li><a href="directory.html" id="directory" title="Directory">Directory</a></li>
+                    <li><a href="join.html" id="join" title="Join">Join</a></li>
+                    <li><a href="discover.html" id="discover" title="Discover">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <h1>Join The Middlebury Chamber of Commerce</h1>
+    </main>
+    
+    <footer>
+        <div>
+            <p>Middlebury<small>Business Directory</small></p>
+            <p>75 Main St, Middlebury, VT 05753</p>
+            <p>Chamber@middlebury.com</p>
+            <p>802-388-7951</p>
+        </div>
+        <nav class="sociallinks">
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="images/5296501_linkedin_network_linkedin_logo_icon.svg" alt="LinkedIn" target="_blank" aria-label="Follow us on LinkedIn">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/1298747_instagram_brand_logo_social_media_icon.svg" alt="Instagram" target="_blank" aria-label="Follow us on Instagram">
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="images/4375133_logo_youtube_icon.svg" alt="YouTube" target="_blank" aria-label="Follow us on YouTube">
+            </a>
+        </nav>
+        <div>
+            <p><span id="currentyear"></span> WDD231 Class Project</p>
+            <p>Trystan Jones</p>
+            <p>@2025 Middlebury Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
