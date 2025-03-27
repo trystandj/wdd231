@@ -443,3 +443,88 @@ form.designOne input[type="submit"]:hover {
     cursor: pointer;
     border-radius: 5px;
 }
+
+.join {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f9f9f9;
+}
+
+.Membership {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 500px;
+    
+    
+    font-family: 'Lato', sans-serif;
+}
+
+/* General Styling */
+.Membership {
+    max-width: 800px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+.Membership h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Membership Level Styling */
+.Membership div {
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+
+
+/* Buttons */
+.Membership .open-button, .close-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.Membership .open-button {
+    background-color: var(--secondary-color);
+    color: black;
+}
+
+.open-button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Modal (Dialog) Styling */
+.Membership dialog {
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    background-color: var(--secondary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Membership .close-button {
+    background-color: red;
+    color: white;
+}
+
+.Membership .close-button:hover {
+    background-color: darkred;
+}

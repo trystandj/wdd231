@@ -46,73 +46,74 @@
     
     <main>
         <h1>Join The Middlebury Chamber of Commerce</h1>
-
-        <form method="GET" action="thankyou.html" class="designOne">
-            <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name" required></label>
-            <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name" required></label>
-            <label>Title <input type="text" name="title" required autocomplete="title-name" title="Your Title"></label>
-            <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email" required></label>
-            <label>Cell Phone <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
-            <label>Business/Organization's Name <input type="text" name="name"  autocomplete="organization" title="An Organization" placeholder="Company-X" required></label>
-            <label>Business Description: <textarea name="businessDescription" rows="4" cols="10" required></textarea></label>
-    
-            <label>Membership-Level
-              <select name="Membership-Level" required>
-                <option value="">None</option>
-                <option value="Member">Non Profit Membership Level</option>
-                <option value="Bronze">Bronze Membership Level</option>
-                <option value="Silver">Silver Membership Level</option>
-                <option value="Gold">Gold Membership Level</option>
-            </label>
-            <label><input type="hidden" id="timestamp" name="timestamp"></label>
-            <label><input type="submit" value="Claim Your Membership"></label>
-        </form>
+        <div class="join">
+            <form method="GET" action="thankyou.html" class="designOne">
+                <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name" required></label>
+                <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name" required></label>
+                <label>Title <input type="text" name="title" required autocomplete="title-name" title="Your Title"></label>
+                <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email" required></label>
+                <label>Cell Phone <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
+                <label>Business/Organization's Name <input type="text" name="name"  autocomplete="organization" title="An Organization" placeholder="Company-X" required></label>
+                <label>Business Description: <textarea name="businessDescription" rows="4" cols="10" required></textarea></label>
         
-        <section class="Membership">
-            <div>
-                <h2>Membership Levels</h2>
+                <label>Membership-Level
+                <select name="Membership-Level" required>
+                    <option value="">None</option>
+                    <option value="Member">Non Profit Membership Level</option>
+                    <option value="Bronze">Bronze Membership Level</option>
+                    <option value="Silver">Silver Membership Level</option>
+                    <option value="Gold">Gold Membership Level</option>
+                </label>
+                <label><input type="hidden" id="timestamp" name="timestamp"></label>
+                <label><input type="submit" value="Claim Your Membership"></label>
+            </form>
+            
+            <section class="Membership">
                 <div>
-                    <h3>Non Profit Membership Level</h3>
-                    <button class="open-button" data-modal="modal-nonprofit">Learn More</button>
-                    <dialog id="modal-nonprofit" aria-labelledby="modalTitle-nonprofit">
-                        <h2 id="modalTitle-nonprofit">Non Profit Membership</h2>
-                        <p>This is a simple modal dialog.</p>
-                        <button class="close-button">Close</button>
-                    </dialog>
+                    <h2>Membership Levels</h2>
+                    <div>
+                        <h3>Non Profit Membership Level</h3>
+                        <button class="open-button" data-modal="modal-nonprofit">Learn More</button>
+                        <dialog id="modal-nonprofit" aria-labelledby="modalTitle-nonprofit">
+                            <h2 id="modalTitle-nonprofit">Non Profit Membership</h2>
+                            <p>This is a simple modal dialog.</p>
+                            <button class="close-button">Close</button>
+                        </dialog>
+                    </div>
+                    
+                    <div>
+                        <h3>Bronze Membership Level</h3>
+                        <button class="open-button" data-modal="modal-bronze">Learn More</button>
+                        <dialog id="modal-bronze" aria-labelledby="modalTitle-bronze">
+                            <h2 id="modalTitle-bronze">Bronze Membership</h2>
+                            <p>This is a simple modal dialog.</p>
+                            <button class="close-button">Close</button>
+                        </dialog>
+                    </div>
+                    
+                    <div>
+                        <h3>Silver Membership Level</h3>
+                        <button class="open-button" data-modal="modal-silver">Learn More</button>
+                        <dialog id="modal-silver" aria-labelledby="modalTitle-silver">
+                            <h2 id="modalTitle-silver">Silver Membership</h2>
+                            <p>This is a simple modal dialog.</p>
+                            <button class="close-button">Close</button>
+                        </dialog>
+                    </div>
+                    
+                    <div>
+                        <h3>Gold Membership Level</h3>
+                        <button class="open-button" data-modal="modal-gold">Learn More</button>
+                        <dialog id="modal-gold" aria-labelledby="modalTitle-gold">
+                            <h2 id="modalTitle-gold">Gold Membership</h2>
+                            <p>This is a simple modal dialog.</p>
+                            <button class="close-button">Close</button>
+                        </dialog>
+                    </div>
+                    
                 </div>
-                
-                <div>
-                    <h3>Bronze Membership Level</h3>
-                    <button class="open-button" data-modal="modal-bronze">Learn More</button>
-                    <dialog id="modal-bronze" aria-labelledby="modalTitle-bronze">
-                        <h2 id="modalTitle-bronze">Bronze Membership</h2>
-                        <p>This is a simple modal dialog.</p>
-                        <button class="close-button">Close</button>
-                    </dialog>
-                </div>
-                
-                <div>
-                    <h3>Silver Membership Level</h3>
-                    <button class="open-button" data-modal="modal-silver">Learn More</button>
-                    <dialog id="modal-silver" aria-labelledby="modalTitle-silver">
-                        <h2 id="modalTitle-silver">Silver Membership</h2>
-                        <p>This is a simple modal dialog.</p>
-                        <button class="close-button">Close</button>
-                    </dialog>
-                </div>
-                
-                <div>
-                    <h3>Gold Membership Level</h3>
-                    <button class="open-button" data-modal="modal-gold">Learn More</button>
-                    <dialog id="modal-gold" aria-labelledby="modalTitle-gold">
-                        <h2 id="modalTitle-gold">Gold Membership</h2>
-                        <p>This is a simple modal dialog.</p>
-                        <button class="close-button">Close</button>
-                    </dialog>
-                </div>
-                
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
     
     <footer>
