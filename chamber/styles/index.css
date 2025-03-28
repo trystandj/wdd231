@@ -444,12 +444,13 @@ form.designOne input[type="submit"]:hover {
     border-radius: 5px;
 }
 
+
 .join {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    
     background: #f9f9f9;
 }
 
@@ -468,7 +469,7 @@ form.designOne input[type="submit"]:hover {
 /* General Styling */
 .Membership {
     max-width: 800px;
-    margin: auto;
+   
     font-family: Arial, sans-serif;
 }
 
@@ -476,7 +477,12 @@ form.designOne input[type="submit"]:hover {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+
 }
+
 
 /* Membership Level Styling */
 .Membership div {
@@ -484,42 +490,54 @@ form.designOne input[type="submit"]:hover {
     border-radius: 8px;
     margin-bottom: 15px;
     text-align: center;
-    color: var(--secondary-color);
+    
+    color: white;
     font-weight: bold;
+
 }
 
+
+
+.membership1 {
+    background-color: var(--secondary-color);
+}
 
 
 /* Buttons */
 .Membership .open-button, .close-button {
     padding: 10px 15px;
     border: none;
-    border-radius: 5px;
+    margin-top: 10px;
     cursor: pointer;
     font-size: 1rem;
     transition: 0.3s;
+    border-radius: 5px;
 }
 
 .Membership .open-button {
-    background-color: var(--secondary-color);
+    background-color: white;
     color: black;
 }
 
 .open-button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--third-color);
 }
 
 /* Modal (Dialog) Styling */
 .Membership dialog {
-    width: 300px;
-    padding: 20px;
-    border-radius: 8px;
-    border: none;
-    text-align: center;
-    background-color: var(--secondary-color);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    max-width: 50ch;
+    border: 0;
+    box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
+.Membership dialog h2 {
+    color: white;
+}
 .Membership .close-button {
     background-color: red;
     color: white;
@@ -528,3 +546,61 @@ form.designOne input[type="submit"]:hover {
 .Membership .close-button:hover {
     background-color: darkred;
 }
+
+
+  
+  .modal::backdrop {
+    background: rgb(0 0 0 / 0.5);
+  }
+
+
+.Membership {
+    opacity: 0;
+    transform: translateY(200px);
+    animation: fadeInDown 1s ease-in-out forwards;
+    transition: complete 0.5s ease-out;
+    
+  }
+
+  .designOne {
+    opacity: 0;
+    transform: translateY(-200px);
+    animation: fadeInDown 1s ease-in-out forwards;
+    transition: complete 0.5s ease-out;
+  }
+  
+  @keyframes fadeInDown {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  #modal-nonprofit[open],
+  #modal-bronze[open],
+  #modal-silver[open],
+  #modal-gold[open] {
+      animation: fadeInScale 0.5s ease-out forwards;
+      pointer-events: auto;
+  }
+
+
+#modal-nonprofit::backdrop,
+#modal-bronze::backdrop,
+#modal-silver::backdrop,
+#modal-gold::backdrop {
+    animation: fadeBackdrop 0.5s ease-out forwards;
+}
+
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
