@@ -581,7 +581,7 @@ form.designOne input[type="submit"]:hover {
   #modal-silver[open],
   #modal-gold[open] {
       animation: fadeInScale 0.5s ease-out forwards;
-      pointer-events: auto;
+    
   }
 
 
