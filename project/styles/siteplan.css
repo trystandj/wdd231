@@ -1,0 +1,35 @@
+body {
+    color: #333333;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ h2 {
+    color: #1E3A5F;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    color: #2E8B57;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+h2:hover {
+    color: #FFD700;
+}
+
+ul {
+    list-style-type: square;
+}
