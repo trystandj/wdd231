@@ -1,40 +1,25 @@
 const url = 'https://trystandj.github.io/wdd231/chamber/data/discover.json';
 const cards = document.querySelector('#cards');
-const list = document.querySelector(".list");
-
 
 let allPlaces = [];
 
 async function getPlaceData() {
-
-        const response = await fetch(url);
-        const data = await response.json();
-        allCompanies = data.companies;
-        displayCompanies(allCompanies); 
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(data); // Check if data is loaded properly
+    allPlaces = data.Locations;
+    displayPlaces(allPlaces); 
 }
 
 getPlaceData();
 
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-const display = document.querySelector("#cards");
-
-gridbutton.addEventListener("click", () => {
-    display.classList.add("grid");
-    display.classList.remove("list");
-});
-
-listbutton.addEventListener("click", showList); 
-
-function showList() {
-    display.classList.add("list");
-    display.classList.remove("grid");
-}
-
-
-
 function displayPlaces(places) {
-    document.querySelector('#cards').innerHTML = '';
+    if (!Array.isArray(places)) {
+        console.error("Error: places is not an array");
+        return;
+    }
+
+    cards.innerHTML = ''; // Clear previous content
 
     places.forEach((place) => { 
         let card = document.createElement('section');
@@ -43,7 +28,7 @@ function displayPlaces(places) {
         let image = document.createElement('img');
         let address = document.createElement('address');
         let description = document.createElement('p');
-        let learnMoreButton = document.createElement('button');
+        let learnMoreButton = document.createElement('button'); // Change to <button>
 
         title.textContent = place.name;
 
@@ -58,9 +43,22 @@ function displayPlaces(places) {
 
         learnMoreButton.textContent = "Learn More";
         learnMoreButton.classList.add("learn-more");
-        learnMoreButton.addEventListener("click", () => {
-            window.open(place.url, "_blank");
-        });
+
+        // Set additional attributes for better accessibility
+        learnMoreButton.setAttribute('role', 'button'); // Specifies the role of the element as a button
+        learnMoreButton.setAttribute('aria-label', `Learn more about ${place.name}`); // Describes the button’s action
+        learnMoreButton.setAttribute('tabindex', '0'); // Makes the button focusable by keyboard navigation
+
+        // Add event listener to open the URL in a new tab when clicked
+        if (place.url) {
+            learnMoreButton.addEventListener('click', () => {
+                console.log(`Opening URL: ${place.url}`); // Debugging: Check the URL
+                window.open(place.url, '_blank'); // Open URL in a new tab
+            });
+        } else {
+            learnMoreButton.setAttribute('disabled', 'true'); // Disable the button if no URL
+            learnMoreButton.style.opacity = "0.5"; // Disabled look
+        }
 
         figure.appendChild(image);
         card.appendChild(title);
@@ -72,10 +70,3 @@ function displayPlaces(places) {
         cards.appendChild(card);
     });
 }
-
-
-function clearButtonClasses() {
-    let filterbuttons = document.querySelectorAll("button");
-    filterbuttons.forEach(button => button.className = "");
-}
-
