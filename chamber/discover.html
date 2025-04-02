@@ -2,57 +2,54 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/layout.css">
-        <link rel="stylesheet" href="styles/mobile-layout.css">
+        <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/mobile-index.css">
         <link rel="icon" href="favicon.ico">
-        <meta property="og:title" content="Discover Middlebury, Vermont - Chamber of Commerce Directory">
+        <meta property="og:title" content="Discover Middlebury, Vermont - Explore Local Attractions">
         <meta property="og:type" content="website">
-        <meta property="og:image" content="https://trystandj.github.io/wdd231/chamber/images/middlebury.webp">
-        <meta property="og:url" content="https://trystandj.github.io/wdd231/chamber/directory.html">
+        <meta property="og:image" content="https://trystandj.github.io/wdd231/chamber/images/discover-middlebury.webp">
+        <meta property="og:url" content="https://trystandj.github.io/wdd231/chamber/discover.html">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Business Directory page for the Middlebury Chamber of Commerce. Showcasing various local businesses and members of the Chamber."> 
+        <meta name="description" content="Discover the charm of Middlebury, Vermont. Explore local attractions, history, and community highlights through the Chamber of Commerce."> 
         <meta name="author" content="Trystan Jones">
-        <title>Middlebury Chamber of Commerce - Business Directory</title>
+        <title>Discover Middlebury, Vermont</title>
         <script src="scripts/nav.js" defer></script>
         <script src="scripts/getdates.js" defer></script>
-        <script src="scripts/company.js" defer></script>
+       <script src="scripts/pointofint.js" defer></script>
+    
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     </head>
+    
 <body>
     <header>
         <div class="logo">
             <span>Middlebury<br><small>Chamber of Commerce</small></span>
-            <img src="images/bank-building.svg" alt="Middlebury, Vermont" width="250" height="250">
+            <img src="images/bank-building.svg" alt="Illustration of a Chamber of Commerce building in Middlebury" width="250" height="250">
         </div>
-        <button type="button" id="menu" aria-label="Open navigation menu"></button>
         
+        <button type="button" id="menu" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="navebar"></button>
+    
         <div class="nav-sunrise">
-            <img src="images/weather-icon.svg" alt="Sun-Rise" width="40" height="40">
+            <img src="images/weather-icon.svg" alt="Sun-Rise" width="40" height="40" aria-hidden="true">
             <nav id="navebar">
                 <ul class="navigation">
                     <li><a href="index.html" id="home" title="Home">Home</a></li>
-                    <li><a href="directory.html" id="directory1" title="Directory">Directory</a></li>
-                    <li><a href="join.html" id="join" title="Join">Join</a></li>
-                    <li><a href="discover.html" id="discover" title="Discover">Discover</a></li>
+                    <li><a href="directory.html" id="directory" title="Directory">Directory</a></li> 
+                    <li><a href="join.html" id="join" title="Join">Join</a></li> 
+                    <li><a href="discover.html" id="discover1" title="Discover">Discover</a></li> 
                 </ul>
             </nav>
-            
         </div>
     </header>
+    
     <main>
-        <h1>Middlebury Chamber of Commerce - Business Directory</h1>
-        <div class="menu-grid">
-            <button id="grid">🔳Grid</button>
-            <button id="list">📄List</button>
-        </div>
-
+        <h1>Discover Middlebury, Vermont</h1>
         <div id="cards" class="grid"></div>
-
-
     </main>
+    
     <footer>
         <div>
             <p>Middlebury<small>Business Directory</small></p>
@@ -71,8 +68,9 @@
                 <img src="images/youtube.svg" alt="YouTube">
             </a>
         </nav>
+        
         <div>
-            <p>  <span id="currentyear"></span> WDD231 Class Project</p>
+            <p><span id="currentyear"></span> WDD231 Class Project</p>
             <p>Trystan Jones</p>
             <p>@2025 Middlebury Chamber of Commerce</p>
             <p id="lastModified"></p>
@@ -80,5 +78,3 @@
     </footer>
 </body>
 </html>
-
-

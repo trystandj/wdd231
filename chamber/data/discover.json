@@ -1,0 +1,52 @@
+ {
+  "Locations": [
+    {
+      "name": "Middlebury College",
+      "address": "Middlebury, VT 05753",
+      "description": "A prestigious liberal arts college known for its beautiful campus, strong academic programs, and the Middlebury Language Schools.",
+      "image": "images/middleburyschool.webp"
+    },
+    {
+      "name": "Henry Sheldon Museum of Vermont History",
+      "address": "1 Park St, Middlebury, VT 05753",
+      "description": "The oldest community-based museum in the U.S., showcasing local history, art, and cultural artifacts from the region.",
+      "image": "images/museum.webp"
+    },
+    {
+      "name": "Otter Creek Brewing",
+      "address": "793 Exchange St, Middlebury, VT 05753",
+      "description": "A well-known Vermont brewery offering craft beers, a tasting room, and a laid-back atmosphere.",
+      "image": "images/ottercreekbrewing.webp"
+    },
+    {
+      "name": "Robert Frost Interpretive Trail",
+      "address": "Ripton, VT 05766",
+      "description": "A scenic and educational trail featuring poems by Robert Frost, located in a peaceful forest setting.",
+      "image": "images/robertfrost.webp"
+    },
+    {
+      "name": "UVM Morgan Horse Farm",
+      "address": "74 Battell Dr, Weybridge, VT 05753",
+      "description": "A historic breeding farm dedicated to preserving the Morgan horse, Vermont’s official state animal.",
+      "image": "images/morganhorse.webp"
+    },
+    {
+      "name": "Middlebury Falls",
+      "address": "Otter Creek, Middlebury, VT 05753",
+      "description": "A stunning waterfall located in the heart of town, providing picturesque views and a peaceful atmosphere.",
+      "image": "images/middleburyfalls.webp"
+    },
+    {
+      "name": "Town Hall Theater",
+      "address": "68 S Pleasant St, Middlebury, VT 05753",
+      "description": "A historic performing arts venue hosting concerts, plays, film screenings, and community events.",
+      "image": "images/townhall.webp"
+    },
+    {
+      "name": "Lincoln Peak Vineyard",
+      "address": "142 River Rd, New Haven, VT 05472",
+      "description": "A family-run vineyard producing locally crafted wines with beautiful views of the Vermont countryside.",
+      "image": "images/lincold.webp"
+    }
+  ]
+}

@@ -278,3 +278,13 @@ footer p {
     display: block;
     font-size: var(--font-size-small);  
   }
+
+  #directory1 {
+    color: var(--third-color);
+    text-decoration: underline;
+}
+
+#join1 {
+    color: var(--third-color);
+    text-decoration: underline;
+}

@@ -640,3 +640,22 @@ form.designOne input[type="submit"]:hover {
     font-family: 'Lato', sans-serif;
     
 }
+
+
+
+
+/* DISCOVER */
+#join1 {
+    color: var(--third-color);
+    text-decoration: underline;
+}
+
+#discover1 {
+    color: var(--third-color);
+    text-decoration: underline;
+}
+
+#home1 {
+    color: var(--third-color);
+    text-decoration: underline;
+}
