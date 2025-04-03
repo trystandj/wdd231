@@ -1,12 +1,11 @@
 const url = 'https://trystandj.github.io/wdd231/chamber/data/discover.json';
-const cards = document.querySelector('#cards');
+const allplaces = document.querySelector('#allplaces');
 
 let allPlaces = [];
 
 async function getPlaceData() {
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data); // Check if data is loaded properly
     allPlaces = data.Locations;
     displayPlaces(allPlaces); 
 }
@@ -19,7 +18,7 @@ function displayPlaces(places) {
         return;
     }
 
-    cards.innerHTML = ''; // Clear previous content
+    allplaces.innerHTML = ''; 
 
     places.forEach((place) => { 
         let card = document.createElement('section');
@@ -28,7 +27,7 @@ function displayPlaces(places) {
         let image = document.createElement('img');
         let address = document.createElement('address');
         let description = document.createElement('p');
-        let learnMoreButton = document.createElement('button'); // Change to <button>
+        let learnMoreButton = document.createElement('button');
 
         title.textContent = place.name;
 
@@ -44,20 +43,18 @@ function displayPlaces(places) {
         learnMoreButton.textContent = "Learn More";
         learnMoreButton.classList.add("learn-more");
 
-        // Set additional attributes for better accessibility
-        learnMoreButton.setAttribute('role', 'button'); // Specifies the role of the element as a button
-        learnMoreButton.setAttribute('aria-label', `Learn more about ${place.name}`); // Describes the button’s action
-        learnMoreButton.setAttribute('tabindex', '0'); // Makes the button focusable by keyboard navigation
+       
+        learnMoreButton.setAttribute('role', 'button'); 
+        learnMoreButton.setAttribute('aria-label', `Learn more about ${place.name}`); 
+        learnMoreButton.setAttribute('tabindex', '0');
 
-        // Add event listener to open the URL in a new tab when clicked
         if (place.url) {
             learnMoreButton.addEventListener('click', () => {
-                console.log(`Opening URL: ${place.url}`); // Debugging: Check the URL
-                window.open(place.url, '_blank'); // Open URL in a new tab
+                window.open(place.url, '_blank'); 
             });
         } else {
-            learnMoreButton.setAttribute('disabled', 'true'); // Disable the button if no URL
-            learnMoreButton.style.opacity = "0.5"; // Disabled look
+            learnMoreButton.setAttribute('disabled', 'true'); 
+            learnMoreButton.style.opacity = "0.5";
         }
 
         figure.appendChild(image);
@@ -67,6 +64,6 @@ function displayPlaces(places) {
         card.appendChild(description);
         card.appendChild(learnMoreButton);
 
-        cards.appendChild(card);
+        allplaces.appendChild(card);
     });
 }
