@@ -21,7 +21,7 @@ function displayPlaces(places) {
     allplaces.innerHTML = ''; 
 
     places.forEach((place) => { 
-        let card = document.createElement('section');
+        let card = document.createElement('div');
         let title = document.createElement('h2');
         let figure = document.createElement('figure');
         let image = document.createElement('img');

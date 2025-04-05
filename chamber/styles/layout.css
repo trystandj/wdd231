@@ -119,12 +119,13 @@ nav a {
     align-items: center;
     flex-direction: row-reverse;
     margin-left: auto;
+
 }
 
 main {
 	margin: 0 auto;
 	padding: 0.5rem;
-	max-width: 900px;
+	
 	background-color: #fff;
 
 }
@@ -156,7 +157,9 @@ section {
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	grid-gap: 50px;
 	align-items: center;
-    max-width:1000px
+    
+    
+    max-width: 900px;
 }
 
 .grid section {
@@ -166,7 +169,8 @@ section {
 .grid img {
     flex-grow: 1; 
     object-fit: cover; 
-    width: 100%;
+    width: 300px;
+    max-width: 100%;
     height: 60%;
     max-height: 150px;  
 }
@@ -284,7 +288,7 @@ footer p {
     text-decoration: underline;
 }
 
-#join1 {
+#join1, #discover1 {
     color: var(--third-color);
     text-decoration: underline;
 }
@@ -294,19 +298,24 @@ footer p {
 /* Discovery */
 
 #allplaces {
-    margin: 1rem 8px;
     
-    
+    width: 100%;
+    max-width: 1500px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
     border-radius: 9px;
     overflow: hidden;
     display: grid;
     justify-items: center;
-    gap: 5rem;
+    gap: 2.5rem;
+    
 }
 
 
 
-#allplaces section {
+#allplaces div {
 
     display: grid;
     grid-template-areas: "name" "photograph"   "description" "address" "button";
@@ -321,9 +330,9 @@ footer p {
     justify-items: center;
 }
 
-#allplaces section img {
-    width: 100%;
-    height: 100%;
+
+#allplaces div img {
+   
     max-width: 300px;
     max-height: 200px;
     grid-area: photograph;
@@ -332,20 +341,21 @@ footer p {
    
 }
 
-#allplaces section h2 {
+#allplaces div h2 {
     grid-area: name;
-    font-size: 1rem 10px;
+    font-size: 1.5rem; /* Adjust to preference */
     padding: .5rem;
+    margin-bottom: 0; /* Ensure no extra margin */
 }
 
-#allplaces section p {
+#allplaces div p {
     grid-area: description;
     font-size: 0.8rem;
     padding: .5rem;
     text-align: center;
 }
 
-#allplaces section address {
+#allplaces div address {
     grid-area: address;
     font-size: 0.8rem;
     padding: .5rem;
@@ -359,19 +369,45 @@ footer p {
 }
 
 @media only screen and (min-width:38rem) {
-    #allplaces section {
-    display: grid;
-    grid-template-areas: "name" "photograph description" "photograph address" "photograph button";
+    #allplaces div {
+        display: grid;
+        grid-template-areas: 
+            "photograph name"
+            "photograph description"
+            "photograph address"
+            "photograph button";
+        
+        align-items: center;
     }
 
-    #allplaces section h2 {
-        grid-area: name;
-        font-size: 1rem 10px;
-        padding: .5rem;
-        height: 25px;
+    #allplaces div img {
+       
+        object-fit: cover; /* Ensures it fills space properly */
+        grid-area: photograph;
+        padding: 0; /* Remove any padding */
     }
+
+
 }
 
 @media only screen and (min-width:64rem) {
-    
+    #allplaces  {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    main .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 50px;
+        align-items: center;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        height: 100%;
+        max-width: 900px;
+    }
 }

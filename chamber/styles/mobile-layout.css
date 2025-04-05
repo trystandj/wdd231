@@ -88,6 +88,13 @@
     }
 
     .nav-sunrise {
+
+        margin: auto;
+
+    }
+
+
+    .nav-sunrise {
         flex-direction: column;
         align-items: center;
     }
