@@ -341,11 +341,12 @@ footer p {
    
 }
 
+
 #allplaces div h2 {
     grid-area: name;
-    font-size: 1.5rem; /* Adjust to preference */
+    font-size: 1.5rem; 
     padding: .5rem;
-    margin-bottom: 0; /* Ensure no extra margin */
+    margin-bottom: 0; 
 }
 
 #allplaces div p {
@@ -416,6 +417,11 @@ footer p {
         transform: translate(-50%);
         height: 100%;
         max-width: 900px;
+    }
+
+    #allplaces div img:hover {
+        transform: scale(1.05); 
+        transition: transform 0.3s ease; 
     }
 }
 
