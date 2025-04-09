@@ -17,7 +17,7 @@
     
         <script src="scripts/nav.js" defer></script>
         <script src="scripts/getdates.js" defer></script>
-    
+        <script type="module" src="scripts/main.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -26,8 +26,8 @@
     <body>
         <header>
             <div class="logo">
-                <span>Middlebury<br><small>Chamber of Commerce</small></span>
-                <img src="images/dumbell.svg" alt="Illustration of a Chamber of Commerce building in Middlebury" width="250" height="250">
+                <span>Achieve Wellness<br><small>Start Your Wellness Journey</small></span>
+                <img src="images/dumbell.svg" alt="Achieve Wellness" width="250" height="250">
             </div>    
             <button type="button" id="menu" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="navebar"></button>
             <div class="nav-sunrise">
@@ -42,7 +42,32 @@
             </div>
         </header>
         <main>
-
+            <section class="hero">
+                <div>
+                  <picture>
+                    <source media="(min-width: 650px)" srcset="images/hero.jpg">
+                    <img src="images/hero.jpg" 
+                         alt="Gymnasium" 
+                         width="1750" 
+                         height="750"
+                         loading="lazy">
+                </picture>
+                </div>
+                <div class="overlay"></div>
+                <div class="hero-content">
+                    <h1>How to Start Your Journey</h1>
+                    <p>Improve Your Life</p>
+                </div>
+                <div class="hero-content1">
+                    <a href="#" class="cta-button">Claim Your Membership</a>
+                </div>
+              </section>
+              <section>
+                <div id="quote-box">
+                    <p id="quote">Loading...</p>
+                    <p id="author"></p>
+                  </div>
+              </section>
         </main>
         <footer>
             <div>
