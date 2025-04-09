@@ -1,18 +1,29 @@
+import { fetchNutritionData } from './workoutAPI.js';
 
-import { fetchZenQuote } from "./getqoute.js";
-import { cacheItem, getCachedItem } from "./cached.js";
+async function loadNutrition() {
+  const input = document.getElementById('food-input').value; // Get text input
+  const data = await fetchNutritionData(input); // Fetch nutrition info
 
-async function loadQuote() {
-  let quote = getCachedItem("zenQuote");
-  if (!quote) {
-    quote = await fetchZenQuote();
-    cacheItem("zenQuote", quote);
-  }
+  const nameEl = document.getElementById('food-name');
+  const descEl = document.getElementById('food-description');
 
-  if (quote) {
-    document.getElementById("quote").textContent = `"${quote.q}"`;
-    document.getElementById("author").textContent = `– ${quote.a}`;
+  if (data && data.foods && data.foods.length > 0) {
+    const firstFood = data.foods[0];
+
+    nameEl.textContent = `Food: ${firstFood.name}`;
+    descEl.textContent = `
+      Calories: ${firstFood.calories || 'N/A'}, 
+      Protein: ${firstFood.protein || 'N/A'}g, 
+      Fat: ${firstFood.fat || 'N/A'}g, 
+      Carbs: ${firstFood.carbohydrates || 'N/A'}g
+    `;
+  } else {
+    nameEl.textContent = "No nutrition data found.";
+    descEl.textContent = "Try a different food input.";
   }
 }
 
-loadQuote();
+// Load nutrition data when the button is clicked
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('fetch-button').addEventListener('click', loadNutrition);
+});
