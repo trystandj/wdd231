@@ -1,5 +1,5 @@
 // /js/api/zenQuotes.js
-const ZEN_QUOTES_URL ="https://zenquotes.io/api/quotes/";
+const ZEN_QUOTES_URL ="https://zenquotes.io/api/random";
 
 export async function fetchZenQuote() {
   try {
