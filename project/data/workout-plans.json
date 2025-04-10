@@ -1,73 +1,84 @@
-[
+{
+  "workouts": [
     {
       "name": "Full Body Burn",
       "focusArea": "Full Body",
       "duration": 30,
       "description": "A high-intensity workout that targets all major muscle groups.",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "link": "https://example.com/workouts/full-body-burn"
     },
     {
       "name": "Core Crusher",
       "focusArea": "Core",
       "duration": 20,
       "description": "A quick core-focused workout to strengthen your abs and lower back.",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "link": "https://example.com/workouts/core-crusher"
     },
     {
       "name": "Leg Day Quickie",
       "focusArea": "Lower Body",
       "duration": 25,
       "description": "A short but intense session targeting glutes, hamstrings, and quads.",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "link": "https://example.com/workouts/leg-day-quickie"
     },
     {
       "name": "Morning Mobility Flow",
       "focusArea": "Flexibility & Mobility",
       "duration": 15,
       "description": "Gentle movements to loosen the body and improve flexibility.",
-      "difficulty": "Easy"
+      "difficulty": "Easy",
+      "link": "https://example.com/workouts/morning-mobility-flow"
     },
     {
       "name": "Cardio Blast",
       "focusArea": "Cardio",
       "duration": 30,
       "description": "An energetic session focused on improving cardiovascular endurance.",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "link": "https://example.com/workouts/cardio-blast"
     },
     {
       "name": "Upper Body Strength",
       "focusArea": "Upper Body",
       "duration": 35,
       "description": "Strength training for chest, arms, shoulders, and back.",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "link": "https://example.com/workouts/upper-body-strength"
     },
     {
       "name": "Relax & Recover",
       "focusArea": "Recovery",
       "duration": 20,
       "description": "Slow-paced stretches and breathing to aid recovery.",
-      "difficulty": "Easy"
+      "difficulty": "Easy",
+      "link": "https://example.com/workouts/relax-recover"
     },
     {
       "name": "HIIT Power",
       "focusArea": "Full Body",
       "duration": 20,
       "description": "High-intensity interval training to burn fat and boost metabolism.",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "link": "https://example.com/workouts/hiit-power"
     },
     {
       "name": "Yoga Flow",
       "focusArea": "Flexibility & Mobility",
       "duration": 30,
       "description": "A calming yoga flow to stretch and relax your muscles.",
-      "difficulty": "Easy"
+      "difficulty": "Easy",
+      "link": "https://example.com/workouts/yoga-flow"
     },
     {
       "name": "Shoulder Sculpt",
       "focusArea": "Upper Body",
       "duration": 25,
       "description": "Targeted exercises to build and sculpt your shoulders.",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "link": "https://example.com/workouts/shoulder-sculpt"
     }
   ]
-  
+}
