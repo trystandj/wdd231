@@ -1,4 +1,5 @@
-[
+{
+  "qoutes": [
     {
       "quote": "Take care of your body. It's the only place you have to live.",
       "author": "Jim Rohn",
@@ -60,4 +61,4 @@
       "location": "United States"
     }
   ]
-  
+}
