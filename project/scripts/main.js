@@ -1,29 +1,16 @@
-import { fetchNutritionData } from './workoutAPI.js';
+document.getElementById('load-quote').addEventListener('click', async () => {
+  try {
+    const response = await fetch('https://favqs.com/api/qotd');
+    const data = await response.json();
 
-async function loadNutrition() {
-  const input = document.getElementById('food-input').value; // Get text input
-  const data = await fetchNutritionData(input); // Fetch nutrition info
+    const quote = data.quote.body;
+    const author = data.quote.author;
 
-  const nameEl = document.getElementById('food-name');
-  const descEl = document.getElementById('food-description');
-
-  if (data && data.foods && data.foods.length > 0) {
-    const firstFood = data.foods[0];
-
-    nameEl.textContent = `Food: ${firstFood.name}`;
-    descEl.textContent = `
-      Calories: ${firstFood.calories || 'N/A'}, 
-      Protein: ${firstFood.protein || 'N/A'}g, 
-      Fat: ${firstFood.fat || 'N/A'}g, 
-      Carbs: ${firstFood.carbohydrates || 'N/A'}g
-    `;
-  } else {
-    nameEl.textContent = "No nutrition data found.";
-    descEl.textContent = "Try a different food input.";
+    document.getElementById('quote').textContent = `"${quote}"`;
+    document.getElementById('author').textContent = `— ${author}`;
+  } catch (error) {
+    console.error("Failed to fetch quote:", error);
+    document.getElementById('quote').textContent = "Could not load quote.";
+    document.getElementById('author').textContent = "";
   }
-}
-
-// Load nutrition data when the button is clicked
-document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('fetch-button').addEventListener('click', loadNutrition);
 });

@@ -1,0 +1,73 @@
+[
+    {
+      "name": "Full Body Burn",
+      "focusArea": "Full Body",
+      "duration": 30,
+      "description": "A high-intensity workout that targets all major muscle groups.",
+      "difficulty": "Hard"
+    },
+    {
+      "name": "Core Crusher",
+      "focusArea": "Core",
+      "duration": 20,
+      "description": "A quick core-focused workout to strengthen your abs and lower back.",
+      "difficulty": "Medium"
+    },
+    {
+      "name": "Leg Day Quickie",
+      "focusArea": "Lower Body",
+      "duration": 25,
+      "description": "A short but intense session targeting glutes, hamstrings, and quads.",
+      "difficulty": "Medium"
+    },
+    {
+      "name": "Morning Mobility Flow",
+      "focusArea": "Flexibility & Mobility",
+      "duration": 15,
+      "description": "Gentle movements to loosen the body and improve flexibility.",
+      "difficulty": "Easy"
+    },
+    {
+      "name": "Cardio Blast",
+      "focusArea": "Cardio",
+      "duration": 30,
+      "description": "An energetic session focused on improving cardiovascular endurance.",
+      "difficulty": "Hard"
+    },
+    {
+      "name": "Upper Body Strength",
+      "focusArea": "Upper Body",
+      "duration": 35,
+      "description": "Strength training for chest, arms, shoulders, and back.",
+      "difficulty": "Medium"
+    },
+    {
+      "name": "Relax & Recover",
+      "focusArea": "Recovery",
+      "duration": 20,
+      "description": "Slow-paced stretches and breathing to aid recovery.",
+      "difficulty": "Easy"
+    },
+    {
+      "name": "HIIT Power",
+      "focusArea": "Full Body",
+      "duration": 20,
+      "description": "High-intensity interval training to burn fat and boost metabolism.",
+      "difficulty": "Hard"
+    },
+    {
+      "name": "Yoga Flow",
+      "focusArea": "Flexibility & Mobility",
+      "duration": 30,
+      "description": "A calming yoga flow to stretch and relax your muscles.",
+      "difficulty": "Easy"
+    },
+    {
+      "name": "Shoulder Sculpt",
+      "focusArea": "Upper Body",
+      "duration": 25,
+      "description": "Targeted exercises to build and sculpt your shoulders.",
+      "difficulty": "Medium"
+    }
+  ]
+  
