@@ -6,7 +6,7 @@
       "duration": 30,
       "description": "A high-intensity workout that targets all major muscle groups.",
       "difficulty": "Hard",
-      "link": "https://example.com/workouts/full-body-burn"
+      "link": "https://www.muscleandfitness.com/category/workouts/abs-and-core-exercises/"
     },
     {
       "name": "Core Crusher",
@@ -14,7 +14,7 @@
       "duration": 20,
       "description": "A quick core-focused workout to strengthen your abs and lower back.",
       "difficulty": "Medium",
-      "link": "https://example.com/workouts/core-crusher"
+      "link": "https://www.muscleandfitness.com/category/workouts/abs-and-core-exercises/"
     },
     {
       "name": "Leg Day Quickie",
@@ -22,7 +22,7 @@
       "duration": 25,
       "description": "A short but intense session targeting glutes, hamstrings, and quads.",
       "difficulty": "Medium",
-      "link": "https://example.com/workouts/leg-day-quickie"
+      "link": "https://www.muscleandfitness.com/category/workouts/leg-exercises/"
     },
     {
       "name": "Morning Mobility Flow",
@@ -30,7 +30,7 @@
       "duration": 15,
       "description": "Gentle movements to loosen the body and improve flexibility.",
       "difficulty": "Easy",
-      "link": "https://example.com/workouts/morning-mobility-flow"
+      "link": "https://www.muscleandfitness.com/category/workouts/leg-exercises/"
     },
     {
       "name": "Cardio Blast",
@@ -38,7 +38,7 @@
       "duration": 30,
       "description": "An energetic session focused on improving cardiovascular endurance.",
       "difficulty": "Hard",
-      "link": "https://example.com/workouts/cardio-blast"
+      "link": "https://www.muscleandfitness.com/category/workouts/chest-exercises/"
     },
     {
       "name": "Upper Body Strength",
@@ -46,7 +46,7 @@
       "duration": 35,
       "description": "Strength training for chest, arms, shoulders, and back.",
       "difficulty": "Medium",
-      "link": "https://example.com/workouts/upper-body-strength"
+      "link": "https://www.muscleandfitness.com/category/workouts/chest-exercises/"
     },
     {
       "name": "Relax & Recover",
@@ -54,7 +54,7 @@
       "duration": 20,
       "description": "Slow-paced stretches and breathing to aid recovery.",
       "difficulty": "Easy",
-      "link": "https://example.com/workouts/relax-recover"
+      "link": "https://www.muscleandfitness.com/workout-routines/total-body-recovery/"
     },
     {
       "name": "HIIT Power",
@@ -62,7 +62,7 @@
       "duration": 20,
       "description": "High-intensity interval training to burn fat and boost metabolism.",
       "difficulty": "Hard",
-      "link": "https://example.com/workouts/hiit-power"
+      "link": "https://www.muscleandfitness.com/category/workouts/arm-exercises/"
     },
     {
       "name": "Yoga Flow",
@@ -70,7 +70,7 @@
       "duration": 30,
       "description": "A calming yoga flow to stretch and relax your muscles.",
       "difficulty": "Easy",
-      "link": "https://example.com/workouts/yoga-flow"
+      "link": "https://www.muscleandfitness.com/category/workouts/arm-exercises/"
     },
     {
       "name": "Shoulder Sculpt",
@@ -78,7 +78,7 @@
       "duration": 25,
       "description": "Targeted exercises to build and sculpt your shoulders.",
       "difficulty": "Medium",
-      "link": "https://example.com/workouts/shoulder-sculpt"
+      "link": "https://www.muscleandfitness.com/category/workouts/arm-exercises/"
     }
   ]
 }
