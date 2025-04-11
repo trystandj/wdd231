@@ -136,4 +136,37 @@
         font-size: 1rem;
         margin: 0.5rem;
     }
+
+    #random-workout-container, #all-workout-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        margin: 1rem;
+
+    
+    }
+
+    .hero img {
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .cta-button {
+
+    }
+}
+
+@media (max-width: 500px) {
+
+
+    #random-workout-container, #all-workout-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin: 1rem;
+        height: auto;
+        text-align: center;
+        align-items: center;
+    
+    }
 }

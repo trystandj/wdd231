@@ -84,7 +84,7 @@ h1 {
     height: 40px;
 }
 
-#home1, #workout1 {
+#home1, #workout1, #macro1 {
     text-decoration: underline;
     color: var(--third-color);
 }
@@ -189,7 +189,7 @@ footer p {
 .hero {
     position: relative;
     width: 100%;
-    height: 90vh; 
+    height: 100vh; 
     overflow: hidden;
     
   }
@@ -298,6 +298,10 @@ footer p {
 
 }
 
+  
+ 
+  
+
 #all-workout-container {
     height: auto;
 }
@@ -405,8 +409,11 @@ text-decoration: none;
 }
 
 .hero img {
-    width: 100%;
-    height: auto;
+
     border-radius: 10px; 
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    
 }
 

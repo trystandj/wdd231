@@ -3,61 +3,71 @@
       "name": "Grilled Lemon Garlic Salmon",
       "focusArea": "General Health",
       "description": "A simple and healthy salmon recipe with lemon and garlic for a burst of flavor.",
-      "link": "https://www.eatingwell.com/recipe/276022/grilled-salmon-with-lemon-and-garlic/"
+      "link": "https://www.eatingwell.com/recipe/276022/grilled-salmon-with-lemon-and-garlic/",
+      "url": "images/grilled-salmon.jpg"
     },
     {
       "name": "Quinoa and Black Bean Salad",
       "focusArea": "Plant-Based",
       "description": "A refreshing salad made with quinoa, black beans, corn, and a tangy lime dressing.",
-      "link": "https://www.feastingathome.com/quinoa-black-bean-salad/"
+      "link": "https://www.feastingathome.com/quinoa-black-bean-salad/",
+      "url": "images/grilled-salmon.jpg"
     },
     {
       "name": "Spaghetti Squash Primavera",
       "focusArea": "Low-Carb",
       "description": "A light and healthy low-carb pasta alternative made with roasted spaghetti squash and vegetables.",
-      "link": "https://www.skinnytaste.com/spaghetti-squash-primavera/"
+      "link": "https://www.skinnytaste.com/spaghetti-squash-primavera/",
+      "url": "images/grilled-salmon.jpg"
     },
     {
       "name": "Sweet Potato Chickpea Buddha Bowl",
       "focusArea": "Plant-Based",
       "description": "A nourishing bowl packed with roasted sweet potatoes, chickpeas, avocado, and tahini dressing.",
-      "link": "https://www.hummusapien.com/sweet-potato-chickpea-buddha-bowl/"
+      "link": "https://www.hummusapien.com/sweet-potato-chickpea-buddha-bowl/",
+      "url": "images/grilled-salmon.jpg"
     },
     {
       "name": "Greek Chicken Souvlaki with Tzatziki",
       "focusArea": "General Health",
       "description": "Grilled chicken marinated with lemon, garlic, and oregano, served with a creamy tzatziki sauce.",
-      "link": "https://www.cookingclassy.com/greek-chicken-souvlaki/"
+      "link": "https://www.cookingclassy.com/greek-chicken-souvlaki/",
+      "url": "images/grilled-salmon.jpg"
     },
     {
       "name": "Cauliflower Rice Stir-Fry",
       "focusArea": "Low-Carb",
       "description": "A low-carb alternative to fried rice made with cauliflower rice and loaded with vegetables.",
-      "link": "https://www.wellplated.com/cauliflower-rice-stir-fry/"
+      "link": "https://www.wellplated.com/cauliflower-rice-stir-fry/",
+      "url": "images/grilled-salmon.jpg"
     },
     {
       "name": "Chia Pudding with Mixed Berries",
       "focusArea": "General Health",
       "description": "A simple and nutritious breakfast or snack made with chia seeds, almond milk, and fresh berries.",
-      "link": "https://www.healthline.com/nutrition/8-chia-seed-pudding-recipes"
+      "link": "https://www.healthline.com/nutrition/8-chia-seed-pudding-recipes",
+      "url": "images/grilled-salmon.jpg"
     },
     {
       "name": "Zucchini Noodles with Pesto",
       "focusArea": "Low-Carb",
       "description": "A healthy and light zucchini noodle dish with homemade pesto for a fresh flavor.",
-      "link": "https://www.thekitchn.com/recipe-zucchini-noodles-with-pesto-258374"
+      "link": "https://www.thekitchn.com/recipe-zucchini-noodles-with-pesto-258374",
+      "url": "images/grilled-salmon.jpg"
     },
     {
       "name": "Turkey and Avocado Lettuce Wraps",
       "focusArea": "Weight Loss",
       "description": "A low-calorie, high-protein snack made with turkey and creamy avocado wrapped in crisp lettuce leaves.",
-      "link": "https://www.eatthis.com/turkey-avocado-lettuce-wraps/"
+      "link": "https://www.eatthis.com/turkey-avocado-lettuce-wraps/",
+      "url": "images/grilled-salmon.jpg"
     },
     {
       "name": "Vegetable Lentil Soup",
       "focusArea": "General Health",
       "description": "A hearty and fiber-rich soup made with lentils, carrots, celery, and a variety of spices.",
-      "link": "https://cookieandkate.com/vegetable-lentil-soup-recipe/"
+      "link": "https://cookieandkate.com/vegetable-lentil-soup-recipe/",
+      "url": "images/grilled-salmon.jpg"
     }
   ]
   

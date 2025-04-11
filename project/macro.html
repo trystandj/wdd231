@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/layout.css">
+        <link rel="stylesheet" href="styles/mobile-layout.css">
+        <link rel="icon" href="images/favicon.ico">
+        <meta property="og:title" content="Plan Your Meals & Track Macros - Personalized Wellness Guide">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://trystandj.github.io/wdd231/project/images/meal-planner.jpg">
+        <meta property="og:url" content="https://trystandj.github.io/wdd231/project/meal-plans.html">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Discover personalized meal plans and macro tracking tools to support your wellness journey. Whether your goal is weight loss, muscle gain, or healthy eating, find the perfect plan for you.">
+        <meta name="author" content="Trystan Jones">
+
+        <title>Achieve Wellness - Meal Plans & Macro Tracking</title>
+
+        <script src="scripts/nav.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
+        <script type="module" src="scripts/main.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    
+    
+    
+    <body>
+        <header>
+            <div class="logo">
+                <span>Nutrition<br><small>Start Eating Healthy</small></span>
+                <img src="images/dumbell.svg" alt="Achieve Wellness" width="250" height="250">
+
+            </div>    
+            <button type="button" id="menu" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="navebar"></button>
+            <div class="nav-sunrise">
+                <img src="images/phone.svg" alt="Sun-Rise" width="40" height="40" aria-hidden="true">
+                <nav id="navebar">
+                    <ul class="navigation">
+                        <li><a href="index.html" id="home" title="Home">Home</a></li>
+                        <li><a href="workout.html" id="workout" title="workout">Workout Page</a></li> 
+                        <li><a href="macro.html" id="macro1" title="macro">Macro Page</a></li> 
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section>
+                <h1>Importance of Eating Healthy</h1>
+            </section>
+            <section class="purpose">
+
+                <picture>
+                    <source media="(min-width: 650px)" srcset="images/healthy-food.jpg">
+                    <img src="images/healthy-food.jpg" 
+                         alt="Colorful plate of nutritious food" 
+                         width="800" 
+                         height="500"
+                         loading="lazy">
+                </picture>
+                <p>Healthy eating is a cornerstone of lasting wellness. The foods you choose directly impact your energy levels, mood, metabolism, and long-term health. A balanced diet rich in whole foods—such as fruits, vegetables, lean proteins, whole grains, and healthy fats—provides your body with essential nutrients to support muscle growth, brain function, immune defense, and hormone balance. Eating mindfully helps regulate appetite, maintain a healthy weight, and reduce the risk of chronic illnesses like heart disease, diabetes, and inflammation. By fueling your body intentionally, you create the foundation for both physical and mental well-being. Explore our meal plans and macro tracking tools to start building better habits today.</p>
+            </section>
+            
+        </main>
+        <footer>
+            <div>
+                <p>Achieve Wellness<small> - Your Workout Plan Hub</small></p>
+                <p>Helping you reach your fitness goals with personalized workout plans</p>
+                <p>contact@achievewellness.com</p>
+                <p>1-800-123-4567</p>
+            </div>
+            
+            <nav class="sociallinks">
+                <a href="https://www.linkedin.com/" target="_blank" aria-label="Follow us on LinkedIn">
+                    <img src="images/linkin.webp" alt="LinkedIn">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Follow us on Instagram">
+                    <img src="images/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/" target="_blank" aria-label="Follow us on YouTube">
+                    <img src="images/youtube.svg" alt="YouTube">
+                </a>
+            </nav>
+            
+            <div>
+                <p><span id="currentyear"></span> WDD231 Class Project</p>
+                <p>Trystan Jones</p>
+                <p>@2025 Achieve Wellness Project</p>
+                <p id="lastModified"></p>
+            </div>
+        </footer>
+    </body>
+</html>
