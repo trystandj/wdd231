@@ -10,6 +10,11 @@
         
     }
 
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
     nav {
 		flex-direction: column;
 		display: block;
@@ -42,7 +47,11 @@
 		display: block;
         display: none;
 	}
-	
+	.logo span {
+        font-size: large;
+        
+    }
+    
 
 
 
@@ -104,4 +113,27 @@
     }
 
 
+    .purpose {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #Workout-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    
+    }
+
+    .work-card {
+        background-color: var(--secondary-color); 
+        
+        height: 250px;
+    }
+
+    .work-card p {
+        font-size: 1rem;
+        margin: 0.5rem;
+    }
 }

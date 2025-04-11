@@ -1,33 +1,32 @@
-// This module handles the display of random workouts on the webpage.
-
-import { getRandomItem } from './utils.js';
+import { getRandomItems } from './utils.js';
 
 export function displayRandomWorkout(workouts) {
     const container = document.querySelector('#Workout-container');
-    container.innerHTML = '';
+    container.innerHTML = '';  // Clear previous workouts
 
-    const randomWorkout = getRandomItem(workouts);
-    const workoutCard = createWorkoutCard(randomWorkout);
-
-    container.appendChild(workoutCard);
+    const randomWorkouts = getRandomItems(workouts, 3); // Get 3 random workouts
+    randomWorkouts.forEach((workout) => {
+        const workoutCard = createWorkoutCard(workout);
+        container.appendChild(workoutCard); // Append each workout card to the container
+    });
 }
 
 function createWorkoutCard(workout) {
     const card = document.createElement('section');
-    card.classList.add('work-card'); 
+    card.classList.add('work-card');
 
     const name = document.createElement('h3');
     name.textContent = workout.name;
-
+    
     const focus = document.createElement('p');
-    focus.textContent = `Focus Area: ${workout.focusArea}`;
-
+    focus.innerHTML = `<strong>Focus Area:</strong> ${workout.focusArea}`;
+    
     const duration = document.createElement('p');
-    duration.textContent = `Duration: ${workout.duration} minutes`;
-
+    duration.innerHTML = `<strong>Duration:</strong> ${workout.duration} minutes`;
+    
     const difficulty = document.createElement('p');
-    difficulty.textContent = `Difficulty: ${workout.difficulty}`;
-
+    difficulty.innerHTML = `<strong>Difficulty:</strong> ${workout.difficulty}`;
+    
     const description = document.createElement('p');
     description.textContent = workout.description;
 
@@ -46,3 +45,5 @@ function createWorkoutCard(workout) {
 
     return card;
 }
+
+
