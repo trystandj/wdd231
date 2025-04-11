@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/layout.css">
+        <link rel="stylesheet" href="styles/mobile-layout.css">
+        <link rel="icon" href="images/favicon.ico">
+        <meta property="og:title" content="Achieve Your Fitness Goals - Workout Plans for Every Level">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://trystandj.github.io/wdd231/project/images/workout-plans.jpg">
+        <meta property="og:url" content="https://trystandj.github.io/wdd231/project/workout-plans.html">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Discover workout plans tailored to all fitness levels. Whether you're a beginner or an advanced athlete, find the perfect routine to reach your fitness goals.">
+        <meta name="author" content="Trystan Jones">
+        <title>Achieve Wellness - Workout Plans</title>
+    
+        <script src="scripts/nav.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
+        <script type="module" src="scripts/main.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    
+    
+    <body>
+        <header>
+            <div class="logo">
+                <span>Physical Health<br><small>Comence Your Growth</small></span>
+                <img src="images/dumbell.svg" alt="Achieve Wellness" width="250" height="250">
+            </div>    
+            <button type="button" id="menu" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="navebar"></button>
+            <div class="nav-sunrise">
+                <img src="images/phone.svg" alt="Sun-Rise" width="40" height="40" aria-hidden="true">
+                <nav id="navebar">
+                    <ul class="navigation">
+                        <li><a href="index.html" id="home" title="Home">Home</a></li>
+                        <li><a href="workout.html" id="workout1" title="workout">Workout Page</a></li> 
+                        <li><a href="macro.html" id="macro" title="macro">Macro Page</a></li> 
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="hero">
+                <div>
+                  <picture>
+                    <source media="(min-width: 650px)" srcset="images/gymhero.jpg">
+                    <img src="images/gymhero.jpg"   
+                         alt="Gymnasium" 
+                         width="1750" 
+                         height="750"
+                         loading="lazy">
+                </picture>
+                </div>
+                <div class="overlay"></div>
+                <div class="hero-content">
+                    <h1>How to Improve Your Body</h1>
+                    
+                </div>
+                <div class="hero-content1">
+                    <a href="#" class="cta-button">Claim Your Membership</a>
+                </div>
+              </section>
+
+              <section class="purpose">
+                <h2>Why and How to Grow Physically</h2>
+                <picture>
+                    <source media="(min-width: 650px)" srcset="images/hero.jpg">
+                    <img src="images/hero.jpg" 
+                         alt="Gymnasium" 
+                         width="800" 
+                         height="500"
+                         loading="lazy">
+                </picture>
+                <p>Physical growth is a fundamental aspect of overall well-being. Regular exercise and strength-building activities not only improve muscle mass and bone density but also enhance endurance, flexibility, and coordination. By challenging your body through progressive workouts, you stimulate muscle growth, boost metabolism, and improve cardiovascular health. Physical growth helps reduce the risk of chronic diseases, improves posture, and enhances your overall quality of life. Embracing physical growth is essential for achieving long-term health, staying strong as you age, and gaining the confidence to tackle daily challenges with vitality. Check out some of our recommended workouts below, along with other wellness plans on our other pages.</p>
+              </section>
+              <section class="workout">
+                <h2>All Workouts</h2>
+                <div id="all-workout-container"></div>  <!-- For all workouts -->
+            </section>
+
+        </main>
+        <footer>
+            <div>
+                <p>Achieve Wellness<small> - Your Workout Plan Hub</small></p>
+                <p>Helping you reach your fitness goals with personalized workout plans</p>
+                <p>contact@achievewellness.com</p>
+                <p>1-800-123-4567</p>
+            </div>
+            
+            <nav class="sociallinks">
+                <a href="https://www.linkedin.com/" target="_blank" aria-label="Follow us on LinkedIn">
+                    <img src="images/linkin.webp" alt="LinkedIn">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Follow us on Instagram">
+                    <img src="images/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/" target="_blank" aria-label="Follow us on YouTube">
+                    <img src="images/youtube.svg" alt="YouTube">
+                </a>
+            </nav>
+            
+            <div>
+                <p><span id="currentyear"></span> WDD231 Class Project</p>
+                <p>Trystan Jones</p>
+                <p>@2025 Achieve Wellness Project</p>
+                <p id="lastModified"></p>
+            </div>
+        </footer>
+    </body>
+</html>

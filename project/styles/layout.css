@@ -19,7 +19,7 @@ body {
     color: #333333;
     background-color: #F5F5F5;
     margin: 0;
-    padding: 20px;
+    padding: 10px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -84,7 +84,7 @@ h1 {
     height: 40px;
 }
 
-#home {
+#home1, #workout1 {
     text-decoration: underline;
     color: var(--third-color);
 }
@@ -189,7 +189,7 @@ footer p {
 .hero {
     position: relative;
     width: 100%;
-    height: 100vh; 
+    height: 90vh; 
     overflow: hidden;
     
   }
@@ -287,7 +287,7 @@ footer p {
     }
 
     
-  #Workout-container {
+  #random-workout-container, #all-workout-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.5rem;
@@ -298,6 +298,9 @@ footer p {
 
 }
 
+#all-workout-container {
+    height: auto;
+}
 
 
 
@@ -400,3 +403,10 @@ text-decoration: none;
 .join a {
     font-size: 2.5rem;
 }
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; 
+}
+
