@@ -18,6 +18,7 @@
         <script src="scripts/nav.js" defer></script>
         <script src="scripts/getdates.js" defer></script>
         <script type="module" src="scripts/main.js"></script>
+        <script src="scripts/modal.js" defer></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -60,7 +61,7 @@
                     
                 </div>
                 <div class="hero-content1">
-                    <a href="#" class="cta-button">Claim Your Membership</a>
+                    <a href="#" class="cta-button" id="openModalBtn" >Claim Your Membership</a>
                 </div>
               </section>
 
@@ -81,6 +82,38 @@
                 <div id="all-workout-container"></div>  <!-- For all workouts -->
             </section>
 
+            
+                <!-- Modal Wrapper -->
+                <div id="formModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-btn">&times;</span>
+    
+                        <!-- Your Form -->
+                        <form method="GET" action="thankyou.html" class="designOne">
+                        <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name" ></label>
+                        <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name" ></label>
+                        <label>Email <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email" autocomplete="email" ></label>
+                        <label>Cell Phone <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
+    
+    
+                        <label>Membership Level</label>
+                        <select name="Membership-Level" required>
+                            <option value="">None</option>
+                            <option value="Bronze">Bronze Membership Level</option>
+                            <option value="Silver">Silver Membership Level</option>
+                            <option value="Gold">Gold Membership Level</option>
+                        </select>
+    
+                        <input type="hidden" id="timestamp" name="timestamp">
+                        <input type="submit" value="Claim Your Membership">
+                        </form>
+    
+                    </div>
+                    </div>
+    
+                    <section class="join">
+                        <button id="openModalBtn1" class="cta-button">Join the Club</button>
+                      </section>  
         </main>
         <footer>
             <div>

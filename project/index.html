@@ -18,6 +18,7 @@
         <script src="scripts/nav.js" defer></script>
         <script src="scripts/getdates.js" defer></script>
         <script type="module" src="scripts/main.js"></script>
+        <script src="scripts/modal.js" defer></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -59,7 +60,7 @@
                     <p>Improve Your Life</p>
                 </div>
                 <div class="hero-content1">
-                    <a href="#" class="cta-button">Claim Your Membership</a>
+                    <a href="#" class="cta-button" id="openModalBtn">Claim Your Membership</a>
                 </div>
               </section>
               <section>
@@ -84,11 +85,93 @@
                 <h2>How to Get Started</h2>
                 <div id="random-workout-container"></div>
               </section>
-              <section class="join">
-                <a href="#" class="cta-button">Join the Club</a>
-              </section>
 
+              <section class="Membership">
+                <div>
+                  <h2>Wellness Club Membership Levels</h2>
               
+                  <div class="membership1">
+                    <h3>Essential Membership</h3>
+                    <button class="open-button" data-modal="modal-essential">Learn More</button>
+                    <dialog id="modal-essential" aria-labelledby="modalTitle-essential">
+                      <h2 id="modalTitle-essential">Essential Membership</h2>
+                      <p>
+                        - Access to all fitness classes (yoga, pilates, HIIT).<br><br>
+                        - Monthly wellness workshops and guest speakers.<br><br>
+                        - Member discount on health products & café.<br><br>
+                        - Access to the meditation and quiet zone.
+                      </p>
+                      <button class="close-button">Close</button>
+                    </dialog>
+                  </div>
+              
+                  <div class="membership1">
+                    <h3>Elevate Membership</h3>
+                    <button class="open-button" data-modal="modal-elevate">Learn More</button>
+                    <dialog id="modal-elevate" aria-labelledby="modalTitle-elevate">
+                      <h2 id="modalTitle-elevate">Elevate Membership</h2>
+                      <p>
+                        - All Essential Membership benefits.<br><br>
+                        - Free quarterly personal wellness assessments.<br><br>
+                        - Invitations to member-only retreats and socials.<br><br>
+                        - Priority booking for classes and consultations.<br><br>
+                        - Monthly guided nature walks & outdoor sessions.
+                      </p>
+                      <button class="close-button">Close</button>
+                    </dialog>
+                  </div>
+              
+                  <div class="membership1">
+                    <h3>Thrive Membership</h3>
+                    <button class="open-button" data-modal="modal-thrive">Learn More</button>
+                    <dialog id="modal-thrive" aria-labelledby="modalTitle-thrive">
+                      <h2 id="modalTitle-thrive">Thrive Membership</h2>
+                      <p>
+                        - All Elevate Membership benefits.<br><br>
+                        - One-on-one monthly wellness coaching sessions.<br><br>
+                        - Personalized nutrition & lifestyle planning.<br><br>
+                        - Complimentary guest passes each month.<br><br>
+                        - First access to new programs and exclusive merchandise.<br><br>
+                        - Recognition in our community spotlight features.
+                      </p>
+                      <button class="close-button">Close</button>
+                    </dialog>
+                  </div>
+                </div>
+              </section>
+              
+              <section>
+                <!-- Modal Wrapper -->
+                <div id="formModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-btn">&times;</span>
+    
+                        <!-- Your Form -->
+                        <form method="GET" action="thankyou.html" class="designOne">
+                        <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name" ></label>
+                        <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name" ></label>
+                        <label>Email <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email" autocomplete="email" ></label>
+                        <label>Cell Phone <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
+    
+    
+                        <label>Membership Level</label>
+                        <select name="Membership-Level" required>
+                            <option value="">None</option>
+                            <option value="Essential Membership">Essential Membership</option>
+                            <option value="Elevate Membership">Elevate Membership</option>
+                            <option value="Thrive Membership">Thrive Membership</option>
+                        </select>
+    
+                        <input type="submit" value="Claim Your Membership">
+                        </form>
+    
+                    </div>
+                    </div>    
+              </section>
+              <section class="join">
+                <button id="openModalBtn1" class="cta-button">Join the Club</button>
+              </section>  
+                
         </main>
         <footer>
             <div>

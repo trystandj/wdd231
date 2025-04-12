@@ -204,6 +204,17 @@
         
         }
 
+        .Membership dialog {
+            padding: 1em;
+            max-width: 50ch;
+            border: 0;
+            box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+            position: absolute;
+            top: 500vh;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
 
 }
 
