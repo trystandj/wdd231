@@ -3,10 +3,12 @@ import { displayRandomQuote } from './quoteDisplay.js';
 import { displayRandomWorkout } from './workoutPlan.js';
 import { displayAllWorkouts } from './allworkout.js';
 import { displayAllMeals } from './macroPlan.js';
+import { initNavbarToggle } from './navbarToggle.js';
 
 const quoteURL = 'https://trystandj.github.io/wdd231/project/data/wellness-qoutes.json';
 const workoutURL = 'https://trystandj.github.io/wdd231/project/data/workout-plans.json';
-const mealURL = 'https://trystandj.github.io/wdd231/project/data/meal-plans.json';  
+const mealURL = 'https://trystandj.github.io/wdd231/project/data/meal-plans.json'; 
+ 
 
 async function init() {
   try {
@@ -41,7 +43,10 @@ async function init() {
 window.onload = init;
 
 
-// Run `init()` when the page is fully loaded
+
+
+
+
 window.onload = function() {
   init();
 };

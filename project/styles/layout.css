@@ -1,14 +1,13 @@
 :root {
     /* --primary-color: #2E8B57; */
-    --primary-color: #a8a8a1;
-    --secondary-color: #5a626b;
-    --third-color: #FFD700;
+    --primary-color: #2E5D7A;
+    --secondary-color: #294070;
+    --third-color: #A4E2EF;
     --background-color: #F5F5F5;
     --font-family: 'roboto', 'opensans', 'sans-serif', 'Montserrat';
     --font-main: 'montserrat';
     --font-body: 'roboto';
-    --text-color: #FFFFFF;
-    --font-size: 1rem;
+    --text-color: #FFFFF0;    --font-size: 1rem;
     --font-size-large: 1.5rem;
     --font-size-small: 0.875rem;
     --border-radius: 5px;
@@ -16,8 +15,7 @@
 }
 
 body {
-    color: #333333;
-    background-color: #F5F5F5;
+    color: #FFFFF0;   background-color: #F5F5F5;
     margin: 0;
     padding: 10px;
     font-family: 'Roboto', sans-serif;
@@ -31,7 +29,12 @@ body {
 }
 
 
-
+h1 {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
 
 ul {
     list-style-type: square;
@@ -200,21 +203,29 @@ footer p {
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #FFFFF0;
     text-align: center;
    
+  }
+
+  .quote-card h3 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
   }
 
   .hero p {
     margin-top: 25px;
     background-color: rgba(0, 0, 0, 0.7); 
-    color: white;
+    color: #FFFFF0;
     padding: 10px;
     border-radius: 4px; 
   }
 
   .hero h1 {
-      color: #ffffff;
+      color: #FFFFF0;
       font-family: 'Montserrat', sans-serif;
       
   }
@@ -224,7 +235,7 @@ footer p {
     top: 80%;
     left: 80%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #FFFFF0;
     text-align: center;
   }
 
@@ -234,7 +245,7 @@ footer p {
     font-size: 1rem;
     display: inline-block;
     background: var(--secondary-color);
-    color: white;
+    color: #FFFFF0;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -273,7 +284,7 @@ footer p {
     #quote-container p:nth-child(2) {
         font-size: 1.5rem;
         text-align: center;
-        
+        color: black;
         padding: 1rem;
 
     }
@@ -281,7 +292,7 @@ footer p {
     #quote-container p:nth-child(3) {
         font-size: 1rem;
         text-align: center;
-        
+        color: black;
         padding: 1rem;
 
     }
@@ -324,7 +335,7 @@ footer p {
     border-radius: 8px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     padding: 1.5rem;
-    color: white; 
+    color: #FFFFF0; 
     overflow: hidden; 
     height: 200px;
 }
@@ -343,7 +354,7 @@ footer p {
 font-size: 1rem;
 display: inline-block;
 background: var(--primary-color);
-color: white;
+color: #FFFFF0;
 font-weight: bold;
 cursor: pointer;
 transition: 0.3s ease-in-out;
@@ -565,7 +576,7 @@ text-decoration: none;
   
   /* Modal inner content */
   .modal-content {
-    background-color: white;
+    background-color: #FFFFFF;
     padding: 2rem;
     border-radius: 10px;
     width: 90%;
@@ -589,13 +600,21 @@ text-decoration: none;
     display: block;
     margin-bottom: 1rem;
   }
+.thankyou p{
+    color: black;
+}
+
+#results p {
+    color: #FFFF;
+}
+
 
   
 form.designOne {
     max-width: 500px;
     margin: 50px;
     padding: 20px;
-    background: #ffffff;
+    background: #FFFFFF;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     font-family: 'Lato', sans-serif;
@@ -627,7 +646,7 @@ form.designOne textarea {
 form.designOne input[type="submit"] {
     width: 95%;
     background: var(--secondary-color);
-    color: white;
+    color: #FFFFF0;
     border: none;
     padding: 12px;
     font-size: 16px;
@@ -691,7 +710,7 @@ form.designOne input[type="submit"]:hover {
     margin-bottom: 15px;
     text-align: center;
     
-    color: white;
+    color: #FFFFF0;
     font-weight: bold;
 
 }
@@ -715,7 +734,7 @@ form.designOne input[type="submit"]:hover {
 }
 
 .Membership .open-button {
-    background-color: white;
+    background-color: #FFFFF0;
     color: black;
 }
 
@@ -740,7 +759,7 @@ form.designOne input[type="submit"]:hover {
 }
 .Membership .close-button {
     background-color: red;
-    color: white;
+    color: #FFFFF0;
 }
 
 .Membership .close-button:hover {
@@ -814,7 +833,7 @@ form.designOne input[type="submit"]:hover {
     padding: 15px; 
     margin-top: 20px; 
     font-family: Arial, sans-serif; 
-    color:white; 
+    color:#FFFFF0; 
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
     opacity: 0;
     transform: translateY(100px);
