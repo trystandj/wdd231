@@ -5,70 +5,64 @@
       "focusArea": "General Health",
       "description": "A simple and healthy salmon recipe with lemon and garlic for a burst of flavor.",
       "link": "https://www.eatingwell.com/recipe/276022/grilled-salmon-with-lemon-and-garlic/",
-      "url": "images/download.jpg"
+      "url": "images/salmon.webp"
     },
     {
       "name": "Quinoa and Black Bean Salad",
       "focusArea": "Plant-Based",
       "description": "A refreshing salad made with quinoa, black beans, corn, and a tangy lime dressing.",
       "link": "https://www.feastingathome.com/quinoa-black-bean-salad/",
-      "url": "images/download.jpg"
+      "url": "images/QuinoaandBlackBeanSalad.webp"
     },
     {
       "name": "Spaghetti Squash Primavera",
       "focusArea": "Low-Carb",
       "description": "A light and healthy low-carb pasta alternative made with roasted spaghetti squash and vegetables.",
       "link": "https://www.skinnytaste.com/spaghetti-squash-primavera/",
-      "url": "images/download.jpg"
+      "url": "images/SpaghettiSquashPrimavera.webp"
     },
     {
       "name": "Sweet Potato Chickpea Buddha Bowl",
       "focusArea": "Plant-Based",
       "description": "A nourishing bowl packed with roasted sweet potatoes, chickpeas, avocado, and tahini dressing.",
       "link": "https://www.hummusapien.com/sweet-potato-chickpea-buddha-bowl/",
-      "url": "images/download.jpg"
+      "url": "images/SweetPotatoChickpeaBuddhaBowl.webp"
     },
     {
       "name": "Greek Chicken Souvlaki with Tzatziki",
       "focusArea": "General Health",
       "description": "Grilled chicken marinated with lemon, garlic, and oregano, served with a creamy tzatziki sauce.",
       "link": "https://www.cookingclassy.com/greek-chicken-souvlaki/",
-      "url": "images/download.jpg"
+      "url": "images/GreekChickenSouvlaki.webp"
     },
     {
       "name": "Cauliflower Rice Stir-Fry",
       "focusArea": "Low-Carb",
       "description": "A low-carb alternative to fried rice made with cauliflower rice and loaded with vegetables.",
       "link": "https://www.wellplated.com/cauliflower-rice-stir-fry/",
-      "url": "images/download.jpg"
+      "url": "images/ricestir.webp"
     },
-    {
-      "name": "Chia Pudding with Mixed Berries",
-      "focusArea": "General Health",
-      "description": "A simple and nutritious breakfast or snack made with chia seeds, almond milk, and fresh berries.",
-      "link": "https://www.healthline.com/nutrition/8-chia-seed-pudding-recipes",
-      "url": "images/download.jpg"
-    },
+
     {
       "name": "Zucchini Noodles with Pesto",
       "focusArea": "Low-Carb",
       "description": "A healthy and light zucchini noodle dish with homemade pesto for a fresh flavor.",
       "link": "https://www.thekitchn.com/recipe-zucchini-noodles-with-pesto-258374",
-      "url": "images/download.jpg"
+      "url": "images/SpaghettiSquashPrimavera.webp"
     },
     {
       "name": "Turkey and Avocado Lettuce Wraps",
       "focusArea": "Weight Loss",
       "description": "A low-calorie, high-protein snack made with turkey and creamy avocado wrapped in crisp lettuce leaves.",
       "link": "https://www.eatthis.com/turkey-avocado-lettuce-wraps/",
-      "url": "images/download.jpg"
+      "url": "images/TurkeyandAvocadoLettuceWraps.webp"
     },
     {
       "name": "Vegetable Lentil Soup",
       "focusArea": "General Health",
       "description": "A hearty and fiber-rich soup made with lentils, carrots, celery, and a variety of spices.",
       "link": "https://cookieandkate.com/vegetable-lentil-soup-recipe/",
-      "url": "images/download.jpg"
+      "url": "images/lentilsoup.webp"
     }
   ]
 }

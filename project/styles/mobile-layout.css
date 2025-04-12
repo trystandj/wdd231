@@ -214,6 +214,12 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
+
+        .purpose img {
+            width: 100%; 
+            height: auto; 
+            border-radius: 10px; 
+        }
         
 
 }
