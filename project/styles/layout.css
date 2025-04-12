@@ -84,7 +84,7 @@ h1 {
     height: 40px;
 }
 
-#home1, #workout1, #all-meal-container1 {
+#home1, #workout1, #all-meal-container1, #macro1 {
     text-decoration: underline;
     color: var(--third-color);
 }
@@ -427,16 +427,12 @@ text-decoration: none;
     
 }
 
-
-
 #all-meal-container {
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%);
-    width: 100%;
-    max-width: 1500px;
-
+    
     border-radius: 9px;
     overflow: hidden;
     display: grid;
@@ -445,12 +441,24 @@ text-decoration: none;
     z-index: 1;
 }
 
+.macro h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 25px;
 
+}
 
-#all-meal-container div {
+/* Meal Card (section) */
+#all-meal-container section {
     z-index: 1;
     display: grid;
-    grid-template-areas: "name" "photograph"   "description" "address" "button";
+    grid-template-areas:
+        "name"
+        "photograph"
+        "description"
+        "address"
+        "button";
     gap: 0.5rem;
     padding: 0.5rem;
     width: 100%;
@@ -462,115 +470,80 @@ text-decoration: none;
     justify-items: center;
 }
 
-
-#all-meal-container div img {
-   
+/* Image Styling */
+#all-meal-container section img {
     max-width: 300px;
     max-height: 200px;
     grid-area: photograph;
-    padding: .5rem;
-
-   
+    padding: 0.5rem;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
+/* Hover effect on large screens */
+@media only screen and (min-width: 64rem) {
+    #all-meal-container {
+        grid-template-columns: 1fr 1fr;
+    }
 
-#all-meal-container div h2 {
+    #all-meal-container section img:hover {
+        transform: scale(1.05);
+    }
+}
+
+/* Meal Title - your JS uses h3 */
+#all-meal-container section h3 {
     grid-area: name;
-    font-size: 1.5rem; 
-    padding: .5rem;
-    margin-bottom: 0; 
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin-bottom: 0;
 }
 
-#all-meal-container div p {
-    grid-area: description;
+/* First paragraph – Focus */
+#all-meal-container section p.focus {
+    grid-area: focus;
     font-size: 0.8rem;
-    padding: .5rem;
+    padding: 0.5rem;
     text-align: center;
 }
 
-#all-meal-container div address {
+/* Second paragraph – Description */
+#all-meal-container section p.description {
+    grid-area: description;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+/* Address (not used in your current JS, can be removed if unnecessary) */
+#all-meal-container section address {
     grid-area: address;
     font-size: 0.8rem;
-    padding: .5rem;
+    padding: 0.5rem;
 }
 
-#all-meal-container button {
-    padding: .5rem;
+#all-meal-container .learn-more-button {
+    padding: 0.5rem;
     width: 100%;
     max-width: 10rem;
     grid-area: button;
+    text-align: center;
+    background-color: var(--primary-color); 
+    border: none;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    color: var(--text-color);
 }
 
-#all-meal-container button:hover {
+
+#all-meal-container .learn-more-button:hover {
     background-color: var(--third-color);
     color: var(--secondary-color);
     font-weight: 700;
     text-decoration: underline;
 }
 
-@media only screen and (min-width:38rem) {
-    #all-meal-container div {
-        display: grid;
-        grid-template-areas: 
-            "photograph name"
-            "photograph description"
-            "photograph address"
-            "photograph button";
-        
-        align-items: center;
-    }
-
-    #all-meal-container div img {
-       
-        object-fit: cover; 
-        grid-area: photograph;
-        padding: 0; 
-    }
 
 
-}
-
-@media only screen and (min-width:64rem) {
-    #all-meal-container  {
-        display: grid;
-
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-    }
-
-    #all-meal-container .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-gap: 50px;
-        align-items: center;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%);
-        height: 100%;
-        max-width: 900px;
-    }
-
-    #all-meal-container div img:hover {
-        transform: scale(1.05); 
-        transition: transform 0.3s ease; 
-    }
-}
-
-#all-meal-container section {
-    z-index: 1;
-    display: grid;
-    grid-template-areas: "name" "photograph" "description" "address" "button";
-    gap: 0.5rem;
-    padding: 0.5rem;
-    width: 100%;
-    max-width: 500px;
-    background-color: var(--secondary-color);
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    color: var(--text-color);
-    justify-items: center;
-}
 
 
 

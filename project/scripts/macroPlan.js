@@ -18,8 +18,7 @@ function createMealCard(meal) {
     const name = document.createElement('h3');
     name.textContent = meal.name;
 
-    const focus = document.createElement('p');
-    focus.innerHTML = `<strong>Focus Area:</strong> ${meal.focusArea}`;
+
 
     const image = document.createElement('img');
     image.src = meal.url;
@@ -28,7 +27,12 @@ function createMealCard(meal) {
     image.width = 400;
     image.height = 250;
 
+    const focus = document.createElement('p');
+    focus.classList.add('focus'); // NEW
+    focus.innerHTML = `<strong>Focus Area:</strong> ${meal.focusArea}`;
+    
     const description = document.createElement('p');
+    description.classList.add('description'); // NEW
     description.textContent = meal.description;
 
     const learnMoreBtn = document.createElement('a');
