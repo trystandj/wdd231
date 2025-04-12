@@ -1,11 +1,11 @@
 import { getRandomItems } from './utils.js';
 
-export function displayAllMeals(meals) {
+export function displayAllMeals(Macros) {
     const container = document.querySelector('#all-meal-container');
     container.innerHTML = '';  
 
-    const randomMeals = getRandomItems(meals, 10); 
-    randomMeals.forEach((meal) => {
+    const randomMacros = getRandomItems(Macros, 9); 
+    randomMacros.forEach((meal) => {
         const mealCard = createMealCard(meal);
         container.appendChild(mealCard); 
     });
@@ -13,7 +13,7 @@ export function displayAllMeals(meals) {
 
 function createMealCard(meal) {
     const card = document.createElement('section');
-    card.classList.add('work-card');
+    card.classList.add('macro-card');
 
     const name = document.createElement('h3');
     name.textContent = meal.name;

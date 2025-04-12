@@ -137,7 +137,7 @@
         margin: 0.5rem;
     }
 
-    #random-workout-container, #all-workout-container {
+    #random-workout-container, #all-workout-container, #all-meal-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1.5rem;
@@ -159,7 +159,7 @@
 @media (max-width: 500px) {
 
 
-    #random-workout-container, #all-workout-container {
+    #random-workout-container, #all-workout-container, #all-meal-container {
         display: grid;
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -167,6 +167,9 @@
         height: auto;
         text-align: center;
         align-items: center;
+        
     
     }
+
+
 }
